@@ -1,12 +1,27 @@
 @import './css/reset.css';
 
 :root {
+  --red: #E2001A;
+  --black: #1E1A19;
+  --grey: #F7F7F3;
+  --yellow: #F8D936;
+  --primary-font : 'Swiss721BT-BoldCondensed';
 
 }
 
 html {
   font-size: 62.5%;
   box-sizing: border-box;
+  font-family: 'roboto';
+  font-weight: normal;
+}
+h1,h2,h3{
+  font-family: 'Swiss721BT-BoldCondensed';  /* var(--primary-font */
+
+}
+a {
+  text-decoration: none;
+  font-family: 'Swiss721BT-BoldCondensed';
 }
 
 /* stylelint-disable */
@@ -16,14 +31,1726 @@ html {
 *::after {
   box-sizing: inherit;
 }
-/* stylelint-enable */
+.hidden{
+  display: none;
+}
+.header__home{
+  background-color: #1E1A19; /* var(--black) */
+  height: 21.5rem;
+  font-family: "Swiss721BT-BoldCondensed";  /* var(--primary-font */
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+.header__img{
+  width: 15.8rem;
+  height: 11.8rem;
+}
+.header__title{
+  font-size: 1.8rem;
+}
+.header__subtitle{
+  font-size: 2.4rem;
+  margin-top: 0.8rem;
+}
+.header__home--wrapper{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+.header__link{
+  background-color: #E2001A; /* var(--red) */
+  width: 11.3rem;
+  height: 2.43rem;
+  font-size: 1.6rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.8rem;
 
-body {
+}
+.kaft{
+  height: 5.85rem;
+  overflow-y: hidden;
+  display: flex;
+  justify-content: center;
+}
+.kaft--red{
+  background-color: #E2001A; /* var(--red) */;
+}
+.kaft--yellow{
+  background-color: #F8D936;
+}
+.kaft__description--wrapper{
+  display: flex;
+  flex-flow: column;
+
+}
+.kaft__description{
+  color: white;
+  font-size: 1.3rem;
+  width: 25.32rem;
+  margin-top: 0.925rem;
+  line-height: 2rem;
+}
+.kaft__description--black{
+  color: black;
+}
+.kaft__title{
+  color: white;
+  font-family: "Swiss721BT-BoldCondensed";  /* var(--primary-font */
+  font-size: 1.8rem;
+  text-shadow: 1px 1px 0px #000000;
+  text-transform: uppercase;
+
+
+}
+.kaft__image{
+  margin-top: 1.233rem;
+  width: 9.45rem;
+  height: 6.3rem ;
+}
+.collectie{
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.collectie__wrapper{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+.collectie__images{
+  position: relative;
+}
+
+.collectie__title{
+  font-size: 2.4rem;
+
+}
+.collectie__description{
+  width: 36.15rem;
+  font-size: 1.6rem;
+  margin-top: 0.7rem;
+}
+.ster__prijs{
+  display: grid;
+}
+
+.ster__abonnement{
+  display: none;
+}
+.ster__home{
+  position: absolute;
+  top: 7rem;
+  right: 0rem;
+
+}
+.ster__aantal, .ster__bgi{
+  grid-column: 1;
+  grid-row: 1;
+}
+.ster__aantal{
+  font-size: 1.6rem;
+  font-family: "Swiss721BT-BoldCondensed";  /* var(--primary-font */
+  color: white;
+  text-shadow: 0.2rem 0.1rem 0 #000000;
+  z-index: 1;
+  margin: auto;
+  text-align: center;
+}
+.link{
+  width: 29.1rem;
+  height: 4.421rem;
+  font-size: 2.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3.678rem;
+  margin-bottom: 4.15rem;
+}
+.link--yellow{
+  background-color: #F8D936; /* var(--yellow) */
+  color: #1E1A19;
+}
+.link--red{
+  background-color: #E2001A;
+  color: white;
+}
+.link--white{
+  border: .3rem #E2001A solid;
+  color: #E2001A;
+}
+.link--black{
+  border: .3rem #000000 solid;
+  color: #000000;
+}
+
+.boeken{
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+.section--intro{
+  height: 7.145rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.boeken__sectie{
+  background-color: #E2001A;
+  color: white;
+}
+.gadgets__sectie{
+  background-color: #F7F7F3/*var(--grey)*/;
+  color: #E2001A;
+}
+.abonnement__sectie{
+  background-color: #F8D936;
+  color: #000000;
+  ;
+}
+
+
+.section__title{
+  font-size: 2.4rem;
+}
+
+
+.red--fill{
+  fill:  #E2001A;;
+}
+.boeken__prijzen{
+  display: flex;
+  justify-content: center;
+  margin-top: 0.455rem;
+  margin-bottom: 2rem;
+
+
+}
+.boeken__prijs{
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  width: 12.5rem;
+  height: 9.643rem;
+  font-family: "Swiss721BT-BoldCondensed";
+  box-shadow: -.6rem .5rem .4rem rgba(0, 0, 0, 0.25);
+
+}
+.boeken__prijs--zwart{
+  background-color: #1E1A19;
+  color: white;
+}
+.boeken__prijs--geel{
+  background-color: #F8D936; /* var(--yellow) */;
+  color: #1E1A19;
+}
+.boeken__prijs--rood{
+  background-color: #E2001A;
+  color: white;
+}
+.prijs__euros{
+  font-size: 2.4rem;
+  margin-top: 1.487rem;
+}
+.prijs__type{
+  font-size: 2rem;
+}
+.prijs__korting{
+  font-size: 1.2rem;
+}
+.grid{
+  display: grid;
+  grid-template-columns: repeat(2, 12.353rem);
+  grid-gap: 5rem;
+  margin: auto;
+
+}
+.boeken__cover{
+  box-shadow: -.6rem .5rem .4rem rgba(0, 0, 0, 0.25)
+}
+.gadgets{
+  background-color: #F7F7F3;
+}
+.gadgets__products{
+  justify-content: center;
+}
+.gadgets__products--humo{
+  background-image: url(/src/assets/fotos/bol.svg);
+  background-repeat: repeat-x ;
+  background-position-y: bottom ;
+  margin-bottom: 3rem;
+}
+.gadgets__product{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  font-family: "Swiss721BT-BoldCondensed";
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+}
+.product__title{
+  color: #1E1A19;
+  margin-top: .8rem;
+}
+.product__prijs{
+  color: #E2001A;
+  margin-top: .8rem;
+  margin-bottom: .8rem;
+}
+.abonnement__flex{
+  display: flex;
+  flex-flow: column;
+  align-items: center ;
+}
+.abonnement__achtergrond{
+  height: 14.33rem;
+  width: 100%;
+  background-color: #F8D936;
+  margin-bottom: 12rem;
+
+}
+.abonnement__image{
+  display: block;
+  margin: auto;
+  width: 23.1rem;
+  height: 24rem;
+}
+.abonnement__subtitle{
+  font-size: 4.8rem;
+  font-family: "Swiss721BT-BoldCondensed";
+  color: #E2001A;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: .3rem .3rem  #000000
+}
+.abonnement__points{
+  font-size: 2rem;
+  font-family: "Swiss721BT-BoldCondensed";
+  margin-top: 5.4rem;
+}
+.abonnement__point{
+  margin-bottom: 2rem;
+}
+
+.abonnement__point::before{
+  content: url(./assets/fotos/bullet.svg);
+  display: inline-block;
+  height: 1.2rem;
+  width: 1.2rem;
+  margin-right: 1rem;
+
+
+
+}
+.abonnement__link{
+  text-transform: uppercase;
+}
+.footer{
+  background-color: #F7F7F3;
+
+
+}
+.footer__flex{
+  padding-top: 3.75rem;
+  padding-bottom: 5.632rem;
+  width: 29.94rem;
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+.footer__link{
+  font-family : 'Roboto';
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  color: #000000;
+  padding-bottom: 1.413rem;
+
+}
+.backlink{
+  width: 5.43rem;
+  height: 2.51rem;
+  background-color:#E2001A;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.827rem;
+  margin-left: 2.4rem;
+}
+.product__detail{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+.product__detail--title{
+  font-size: 2.4rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  margin-top: 4rem;
+}
+.product__detail--images{
+  display: grid;
+  grid-template-columns: repeat(3, 6.64rem);
+  grid-template-rows: 29.25rem 10rem;
+  grid-gap: 1rem;
+}
+.product__detail--wrapper{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+.image__big{
+  height: 29.25rem;
+  width: 19.54rem;
+  grid-row: 1;
+}
+.image__small{
+  height: 10rem;
+  width: 6.64rem;
+  grid-row: 2;
+  margin-right: .7rem;
+}
+.product__description{
+  width: 34.8rem;
+  font-size: 1.2rem;
+}
+.product__prijzen{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+
+}
+.product__detail--prijs{
+  font-size: 3.6rem;
+  font-family: "Swiss721BT-BoldCondensed";
+  margin-right: 1.8rem;
+  color: #E2001A;
+}
+.ster__euros{
+  font-size: 2.2rem;
+}
+.product__versies{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+.product__versies--flex > span{
+  font-size: 1.8rem;
+  margin-bottom: 2.4rem;
+}
+.product__versie{
+  color: #000000;
+  font-family: "Swiss721BT-BoldCondensed";
+  font-size: 2.2rem;
+  display: flex;
+  align-items: center;
 
 }
 
-.hidden {
+.product__versie > input{
+  margin-right: .6rem;
+  width: 3.3rem;
+  height: 3.3rem;
+  border: 0.3rem solid black;
+}
+input:checked{
+  background-color: #E2001A;
+  color: white;
+}
+.product__versies--aantal{
+  display: flex;
+  flex-flow: column;
+  font-family: "Swiss721BT-BoldCondensed";
+
+}
+.product__versies--aantal > span {
+  font-size: 1.8rem;
+  margin-bottom: 1.8rem;
+}
+.input__aantal{
+  width: 6.42rem;
+  height: 4.9rem;
+  border: .4rem solid #000000;
+  text-align: center;
+  font-size: 1.8rem;
+  font-family: "Swiss721BT-BoldCondensed";
+}
+.versies__aantal--flex{
+  display: flex;
+  align-items: flex-end;
+  margin-top: 3.5rem;
+}
+.product__submit{
+  width: 24rem;
+  height: 4.9rem;
+  background-color: #E2001A ;
+  margin-left: 2.4rem;
+  font-size: 2rem;
+  font-family: "Swiss721BT-BoldCondensed";
+  color: #F7F7F3;
+}
+.reviews{
+  margin-top: 4.8rem;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+.review{
+  width: 100%;
+  height: 15.9rem;
+  background-color: #F7F7F3;
+  color: black;
+  font-family: "Swiss721BT-BoldCondensed";
+  font-size: 2.4rem;
+  margin-bottom: 1.32rem;
+}
+.review__text{
+  font-family: 'roboto';
+  font-size: 1.8rem;
+  width: 32rem;
+  margin: auto;
+  margin-bottom: ;
+}
+.review--flex{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 2.2rem 0;
+  width: 100%;
+}
+.review__form{
+  width: 90%;
+}
+.review__form--section{
+  font-family: "Swiss721BT-BoldCondensed";
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+.review__form--title{
+  color: #E2001A;
+  font-size: 2.4rem;
+  margin-bottom: 1.7rem;
+}
+.review__form--scores{
+  font-size: 1.8rem;
+
+}
+.review__form--scores > span {
+  margin: 0 0 8rem 2.4rem;
+}
+.form__circles{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.form__circle{
+  font-size: 2.2rem;
+  display: flex;
+  align-items: center;
+}
+.form__circle > input{
+  width: 2.8rem;
+  height: 2.8rem;
+
+}
+.review__form--name{
+ font-size: 1.8rem;
+ display: flex;
+ flex-flow: column;
+ margin-top: 2.9rem;
+
+}
+.review__form--name > input {
+
+  height: 4.9rem;
+  border: solid black .3rem;
+  margin-top: .6rem;
+}
+.form__textarea{
+  border: .3rem solid black;
+  height: 10.7rem;
+  margin-top: .6rem;
+}
+.form__submit{
+  margin: auto;
+  margin-top: 2rem;
+  font-family: "Swiss721BT-BoldCondensed";
+}
+.no_stock{
+  background-color: #E2001A;
+  height: 20.2rem;
+  margin-top: 2.77rem;
+  color: white;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+
+}
+.no_stock__title{
+  font-size: 2.4rem;
+  padding-top: 1.8rem;
+}
+.no_stock__description{
+  font-size: 1.6rem;
+  width: 30.67rem;
+  text-align: center;
+  margin-top: 1.7rem;
+}
+.no_stock__form{
+  margin-top: 2.1rem;
+}
+.stock__form--email{
+  width: 27.2rem;
+  height: 4.9rem;
+  border: .3rem solid black;
+}
+.stock__form--email::placeholder{
+  font-size: 1.8rem;
+  font-family: "Swiss721BT-BoldCondensed";
+  color: #000000;
+  padding-left: 1.5rem;
+}
+.stock__form--submit{
+  width: 6.7rem;
+  height: 4.9rem;
+  background-color: #000000;
+  color: white;
+  border: 0.3rem solid black;
+}
+.related{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+.related__product--image{
+  width: 20rem;
+}
+.related__product--title{
+  font-size: 2em;
+  font-family: "Swiss721BT-BoldCondensed";
+  text-align: center;
+  padding: 1.5rem 0;
+}
+.yellow__bg{
+  background-color: #F8D936;
+  height: 12.5rem;
+  position: relative;
+}
+.abonnement__header{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.abonnement__header--image{
+  width: 17rem;
+  height: 17.6rem;
+  margin: auto;
+  display: block;
+
+}
+.abonnement__info, .abonnement__description{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+
+}
+.abonnement__info{
+  margin-top: 20rem;
+}
+.info__title{
+  font-size: 3.6rem;
+  color: #E2001A;
+  text-shadow: .2rem .2rem 0px #000000;
+}
+.info__subtitle{
+  color: #E2001A;
+  font-family: "Swiss721BT-BoldCondensed";
+  font-size: 2.4rem;
+  margin: 1.2rem 0;
+}
+.info__description{
+  width: 34.4rem;
+
+}
+.info__list{
+  margin-top: 1.7rem;
+  font-family: "Swiss721BT-BoldCondensed";
+  font-size: 1.6rem;
+  margin-bottom: 5.3rem;
+
+}
+.info__list--item{
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.info__list--item > p{
+  margin-left: 5.3rem;
+  max-width: 22.3rem;
+}
+
+.info__list--item::before{
+  content: url(./assets/fotos/bullet.svg);
+  display: inline-block;
+  height: 1.2rem;
+  width: 1.2rem;
+
+}
+.prijs{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+
+}
+.abonnement__prijs{
+  font-size: 2.4rem;
+  font-family: "Swiss721BT-BoldCondensed";
+  display: grid;
+  grid-template-areas: 'input maanden aantal'
+                       'leeg besparing korting';
+  grid-gap: 1rem;
+  margin-top: 2.63rem;
+  background-image: url(/src/assets/fotos/bol.svg);
+  background-repeat: repeat-x;
+  background-position-y: bottom ;
+  padding-bottom: 2.2rem;
+}
+.abonnement__prijs > input {
+  width: 2.6rem;
+  height: 2.6rem;
+  grid-area: input;
+  margin: auto;
+  border: solid 0.3rem black;
+
+}
+.abonnement__prijs--maanden{
+
+  grid-area: maanden;
+}
+.abonnement__prijs--aantal{
+  grid-area: aantal;
+  color: #E2001A;
+}
+.abonnement__prijs--besparing{
+  grid-area: besparing;
+  font-size: 1.2rem;
+  color: #959595;
+}
+.abonnement__prijs--korting{
+  grid-area: korting;
+  font-size: 1.2rem;
+  color: #28B257;
+  text-align: ;
+}
+.form__submit--abonnement{
+  width: 35rem;
+  margin-bottom: 3.74rem;
+}
+.winkelmand__header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(/src/assets/fotos/bol.svg);
+  background-repeat: repeat-x;
+  background-position-y: center;
+  margin: 2.625rem 0 1.392rem 0;
+}
+.winkelmand__title{
+  background-color: #E2001A ;
+  color: white;
+  padding: 1.277rem 2.107rem;
+  font-size: 2.4rem;
+  text-transform: uppercase ;
+}
+.winkelmand__indicators{
+  display: flex;
+  justify-content: space-evenly;
+}
+.indicator__bolletjes{
+  width: 5.247rem;
+  background-image: url(/src/assets/fotos/bol.svg);
+  background-repeat: repeat-x;
+  background-position-y: center;
+  opacity: 40%;
+}
+.winkelmand__indicator{
+  font-family: "Swiss721BT-BoldCondensed";
+  text-align: center;
+  width: 7rem;
+  background-color: white;
+  opacity: 40%;
+
+}
+.winkelmand__indicator--number{
+  font-size: 2.4rem;
+}
+.winkelmand__indicator--name{
+  font-size: 1.8rem;
+}
+.compleet{
+  opacity: 100%;
+}
+.winkelmand__products{
+  margin-top: 3.324rem;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  background-image: url(/src/assets/fotos/bol.svg);
+  background-repeat: repeat-x;
+  background-position-y: bottom;
+}
+.winkelmand__product{
+  font-size: 1.8rem;
+  margin-bottom: 5.934rem;
+}
+.winkelmand__product--info{
+  display: flex;
+  margin-left: .85rem;
+}
+
+.winkelmand__product--image{
+  height: 8.67rem;
+}
+.product--info__flex{
+  margin-left: .85rem;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+.winkelmand__product--inputs{
+  margin-top: 1.639rem;
+  display: flex;
+  justify-content: space-between;
+}
+.winkelmand__product--aantal{
+  font-family: "Swiss721BT-BoldCondensed";
+}
+.winkelmand__product--input{
+  width: 4.012rem;
+  height: 4.438rem;
+  border: .3rem solid black;
+  font-family: "Swiss721BT-BoldCondensed";
+  text-align: center;
+  font-size: 1.8rem;
+  margin-left: .4rem;
+}
+.winkelmand__links{
+  display: grid;
+  grid-template-areas: 'totaal'
+                       'kortingscode'
+                       'update'
+                       'bestellen'
+                       'webshop';
+  margin-top: 1.654rem;
+
+}
+.winkelmand__links--wrapper{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+.winkelmand__totaal{
+  font-size: 3.6rem;
+  grid-area: totaal;
+  text-align: center;
+}
+.winkelmand__update,.winkelmand__bestellen{
+  margin: 2.3rem 0 0 0;
+}
+.winkelmand__update,.winkelmand__bestellen,.winkelmand__webshop{
+  margin: 2.3rem 0 0 0;
+  width: 34.1rem;
+}
+.winkelmand__webshop{
+  grid-area: webshop;
+  margin: 7rem 0 2rem 0;
+}
+.winkelmand__kortingscode{
+  grid-area: kortingscode;
+  margin-top: 1.654rem;
+
+}
+.winkelmand__kortingscode--titel{
+  font-family: "Swiss721BT-BoldCondensed";
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 1.633rem;
+}
+.winkelmand__update{
+  grid-area: update;
+  font-family: "Swiss721BT-BoldCondensed";
+  background-color: white;
+}
+.winkelmand__bestellen{
+  grid-area: bestellen;
+}
+.winkelmand__betaling--linken{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  margin-top: 4.531rem;
+}
+.winkelmand__betaling--link{
+  height: 4.9rem;
+  margin: 1.212rem 0;
+}
+.winkelmand__betaling--title{
+  font-size: 2.4rem;
+  color: #E2001A;
+}
+.winkelmand__betaling--subtitle{
+  font-size: 1.8rem;
+  margin-top: 1.1rem;
+}
+.link__betalen--black{
+  background-color: black;
+  color: white;
+}
+.winkelmand__gegevens{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+
+}
+.gegevens__formulier{
+  font-family: "Swiss721BT-BoldCondensed";
+  display: flex;
+  align-items: left;
+  flex-flow: column;
+  font-size: 1.8rem;
+  width: 30rem;
+  margin-top: 4rem;
+  background-image: url(/src/assets/fotos/bol.svg);
+  background-repeat: repeat-x;
+  background-position-y: bottom;
+}
+.gegevens__formulier > label {
+  display: flex;
+  flex-flow: column;
+  margin-bottom: 3.274rem;
+
+}
+.gegevens__form--wrapper{
+  display: flex;
+  align-items: center;
+  margin-top: 1.8rem;
+}
+.gegevens__form--wrapper > input {
+  height: 2.6rem;
+  width: 2.6rem;
+
+}
+.form__radiofield--rechts{
+  margin-left: 2.475rem;
+}
+.gegevens__form--input{
+  border: 0.3rem solid #000000;
+  margin-top: 1rem;
+  height: 4.9rem;
+  width: 30rem;
+  font-size: 1.8rem;
+
+}
+.gegevens__form--huis{
+  width: 12.1rem;
+}
+.telefoon__updates{
+  font-size: 1.8rem;
+  font-family: 'roboto';
+}
+
+
+.gegevens__form--betaling{
+  display: flex;
+  flex-flow: column;
+
+  justify-content: space-between;
+  align-items: center;
+  margin: 3rem 0 1.953rem 0;
+
+}
+
+
+.gegevens__form--betaling > input {
+  width: 3rem;
+  height: 3rem;
+}
+.betaling__logo{
+  width: 15rem;
+}
+.betaling__logo--paypal{
+  width: 9rem;
+}
+.gegevens__prijzen{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+.gegevens__prijzen--sub{
+  font-size: 1.6rem;
+}
+.prijzen__sub--prijs{
+  margin-top: 2.7rem;
+}
+.prijzen__sub--korting{
+  margin: .8rem 0 1.149rem 0;
+}
+.gegevens__prijzen--totaal{
+  font-size: 3.6rem;
+  color: #E2001A;
+}
+
+@media only screen and (min-width: 835px){
+.header__home{
+    height: 33.23rem;
+    flex-flow: row-reverse;
+    justify-content: space-around;
+
+}
+
+.header__img{
+    width: 44.44rem;
+    height: 33.32rem;
+}
+.header__home--wrapper{
+    align-items: unset;
+    margin-right: -10rem;
+
+}
+.header__title{
+    font-size: 2.4rem;
+    margin-bottom: 1.274rem;
+}
+.header__subtitle{
+    font-size: 4.8rem;
+    margin-bottom: 1.274rem;
+}
+.header__link{
+    font-size: 1.8rem;
+}
+.kaft{
+    height: 11.2rem;
+    align-items: center;
+}
+.kaft__description{
+    font-size: 1.8rem;
+    width: 36.7rem;
+}
+.kaft__title{
+
+    font-size: 3.6rem;
+    text-shadow: .3rem .3rem  0 #000000;
+    padding-top: 1rem;
+}
+.kaft__image{
+    width: 33.636rem;
+    height: 16.956rem;
+    margin-top: 8rem;
+}
+.collectie{
+  flex-flow: row-reverse;
+}
+.collectie__wrapper{
+    align-items: unset;
+    margin-top: 1.66rem;
+}
+.collectie__title{
+    font-size: 3.6rem;
+}
+.collectie__description{
+    font-size: 1.6rem;
+    margin-top: 1.4rem;
+    width: 43.536rem;
+}
+.collectie__image{
+    width: 34.753rem;
+    height: 25.368rem;
+}
+.ster__home{
+    top: 16rem;
+    right: 9rem;
+}
+.ster__aantal{
+    font-size: 1.8rem;
+}
+.ster__bgi{
+    width: 9.766rem;
+    height: 9.2rem;
+}
+.boeken{
+  background-image: url(/src/assets/fotos/bol.svg);
+  background-repeat: repeat-x;
+  background-position-y: 3.5rem;
+  background-size: .8rem;
+}
+.boeken__sectie{
+    width: 36.84rem;
+    margin: auto;
+
+}
+.boeken__title{
+    font-size: 3.6rem;
+}
+.boeken__prijzen{
+    margin: 3.27rem 0;
+
+}
+.boeken__prijs{
+    width: 18.22em;
+    height: 14.05em;
+    box-shadow: -.6rem .5rem .4rem rgba(0, 0, 0, 0.25);
+    padding-top: 1.5rem;
+    /*display: flex;
+    justify-content: space-evenly;*/
+}
+.boeken__prijs--zwart{
+    margin-right: 2.24rem;
+}
+.boeken__prijs--rood{
+  margin-left: 2.24rem;
+}
+.prijs__euros{
+  font-size: 3.6rem;
+
+}
+.prijs__kort{
+    font-size: 4.1rem;
+}
+.prijs__type{
+    font-size: 2.8rem;
+    margin-top: .55rem;
+}
+.prijs__korting{
+    font-size: 1.8rem;
+    margin-top: .55rem;
+}
+.boeken__covers{
+    grid-template-columns: repeat(4, 18.163rem);
+    grid-gap: 3rem;
+
+}
+.boeken__cover{
+    width: 18.163rem;
+    height: 25.786rem;
+}
+.gadgets{
+    margin-top: 8.5rem;
+    position: relative;
+}
+.gadgets__title{
+    background-color: #E2001A;
+    color: white;
+    font-size: 3.6rem;
+    width: 36.84rem;
+    height: 5.5rem;
+    text-align: center;
+    padding-top: .63rem;
+    position: absolute;
+    top: -2.5rem;
+}
+.gadgets__products--humo{
+  background-size: .8rem;
+  grid-template-columns: repeat(3, 18.187rem);
+  grid-gap: 5.3rem;
+
+}
+.gadgets__products--acc{
+  grid-template-columns: repeat(2, 18.187rem);
+  grid-gap: 5.3rem;
+}
+.product__title{
+    font-size: 1.8rem;
+}
+.product__prijs{
+    font-size: 2.4rem;
+}
+.product__image{
+    width: 18.187rem;
+    height: 27.28rem;
+}
+.abonnement__sectie{
+    display: none;
+}
+.abonnement__achtergrond{
+  height: 31.2rem;
+}
+.ster__abonnement{
+  display: grid;
+}
+.ster__aantal--abonnement{
+    font-size: 2.4rem;
+}
+.ster__aantal--abonnement > span{
+  font-size: 1.6rem;
+}
+.abonnement__points{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.abonnement__image{
+    width: 62.9rem;
+    height: 36.8rem;
+    margin-top: 12.8rem;
+}
+.abonnement__link{
+    height: 5.6rem;
+}
+.ster__bgi--abonnement{
+    width: 13.8rem;
+    height: 13rem;
+}
+.abonnement__subtitle{
+    margin-top: 10rem;
+}
+.product__detail{
+   display: flex;
+   justify-content: space-evenly;
+   flex-flow: row;
+
+}
+.product__detail--images{
+    grid-area: images;
+    grid-gap: 3rem;
+}
+.product__detail--title{
+    font-size: 3.6rem;
+    width: 29.9rem;
+    text-align: left;
+
+}
+.product__detail-wrapper{
+  grid-area: description;
+  display: flex;
+  flex-flow: column;
+  align-items: left;
+
+}
+.product__prijzen{
+    justify-content: unset;
+}
+.reviews--flex{
+    display: flex;
+    flex-flow: row-reverse;
+    justify-content: space-evenly;
+}
+.image__big{
+    width: 24.425rem;
+    height: 36.568rem;
+}
+.image__small{
+    width: 8.151rem;
+    height: 12.264rem;
+}
+.product__description{
+    font-size: 1.8rem;
+    width: 41.7rem;
+}
+.product__versies--flex{
+    display: flex;
+    align-items: center;
+    margin-top: 4rem;
+}
+.product__versies{
+    align-items: unset;
+}
+.product__versie > input{
+    margin-left: 5rem;
+}
+.ster__detail{
+    width: 11.8rem;
+    height: 11.123;
+}
+.input__aantal{
+    height: 6.4rem;
+    width: 5.8rem;
+}
+.reviews, .review__form--section{
+    width: 45%;
+}
+.review__form--section{
+  align-items: unset;
+  justify-content: space-evenly;
+}
+.review__form--title{
+    font-size: 3.6rem;
+    margin-bottom: unset;
+}
+.form__submit{
+    margin: unset;
+    margin-top: 2rem;
+    width: 19.3rem;
+}
+.no_stock__title{
+    font-size: 3.6rem;
+}
+.no_stock__description{
+    font-size: 1.8rem;
+}
+.related--flex{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 3rem;
+}
+.related__product--title{
+    text-align: left;
+}
+.section__title--related{
+  display: block;
+}
+.section__title--related > h2{
+    margin-top: 3rem;
+}
+.section__title--reviews{
   display: none;
+}
+.yellow__bg{
+    height: 27.7rem;
+}
+.abonnement__image--detail{
+    margin-top: unset;
+}
+.info__title{
+    font-size: 4.8rem;
+    margin-top:3.171rem;
+}
+.info__subtitle{
+    font-size: 3.6rem;
+}
+.info__description{
+    font-size: 1.6rem;
+    width: 58.7rem;
+    margin-top: 3.171rem;
+}
+.info__list{
+    margin-top: 3.2rem;
+}
+.info__list--item > p {
+  max-width: unset;
+  font-size: 2rem;
+
+}
+.abonnement__prijzen{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+
+}
+.abonnement__prijs{
+    width: 65.286rem;
+    background-size: .8rem;
+}
+.form__submit--abonnement{
+    margin: auto;
+    margin-top: 4.9rem;
+    margin-bottom: 8rem;
+}
+.abonnement__prijs--maanden, .abonnement__prijs--aantal{
+    font-size: 2.4rem;
+}
+.abonnement__prijs--besparing, .abonnement__prijs--korting{
+    font-size: 1.8rem;
+}
+.winkelmand__header, .winkelmand__products{
+    background-size: .8rem;
+}
+.winkelmand__title{
+    font-size: 3.6rem;
+    width: 36.842rem;
+    text-align: center;
+}
+.winkelmand__indicators{
+    margin: 4.477rem 0;
+}
+.winkelmand__indicator{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+.winkelmand__indicator--number{
+    font-size: 3.6rem;
+}
+.winkelmand__indicator--name{
+    font-size: 2.4rem;
+}
+.winkelmand__products{
+    width: 77.44rem;
+    margin: auto;
+
+}
+.winkelmand__product{
+    display: flex;
+    align-items: center;
+}
+.winkelmand__product--info{
+    margin-right: 6rem;
+}
+.winkelmand__product--label{
+    margin-right: 8.1rem;
+}
+.product--info__flex{
+  margin-left: 3.3rem;
+}
+.winkelmand__product--title{
+    font-size: 2.4rem;
+}
+.winkelmand__links{
+  grid-template-areas: '. totaal'
+                      'kortingscode update'
+                      'webshop bestellen';
+  grid-column-gap: 8rem ;
+}
+.winkelmand__update, .winkelmand__webshop, .winkelmand__bestellen{
+    width: 20.429rem;
+    font-size: 1.8rem;
+
+
+}
+.winkelmand__update{
+    margin-top: 5.3rem;
+}
+.winkelmand__webshop{
+    margin: unset;
+    margin-top: 4rem;
+}
+.winkelmand__bestellen{
+    margin-top: 4rem;
+}
+.winkelmand__related{
+    margin-top: 8rem;
+}
+.indicator__bolletjes{
+    background-size: .8rem;
+    width:10.5rem;
+}
+.gegevens__formulier{
+    display: grid;
+    grid-template-areas: 'aanhef .'
+                         'voornaam achternaam'
+                         'land woonplaats'
+                         'straat huis'
+                         'email telefoon'
+                         'betaal betaal';
+      grid-column-gap: 9.4rem;
+      justify-content: center;
+      width: 77.44rem;
+      background-size: .8rem;
+}
+.gegevens__form--aanhef{
+    grid-area: aanhef;
+}
+.gegevens__form--voornaam{
+  grid-area: voornaam;
+}
+.gegevens__form--achternaam{
+  grid-area: achternaam;
+}
+.gegevens__form--land{
+  grid-area: land;
+}
+.gegevens__form--woonplaats{
+  grid-area: woonplaats;
+}
+.gegevens__form--straat{
+  grid-area: straat;
+}
+.gegevens__form--huis{
+  grid-area: huis;
+  width: 15.9rem;
+}
+.gegevens__form--email{
+  grid-area: email;
+  margin-top: 2rem;
+}
+.gegevens__form--telefoon{
+  grid-area: telefoon;
+}
+
+.gegevens__form--betaal{
+  grid-area: betaal;
+}
+.betaling__flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.gegevens__prijzen{
+    flex-flow: row-reverse;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+.gegevens__prijzen--sub, .gegevens__prijzen--totaal{
+    text-align: right;
+}
+
+.winkelmand__betaling--title{
+    font-size: 4.8rem;
+}
+.winkelmand__betaling--subtitle{
+    font-size: 3.6rem;
+    margin-top: 3.3rem;
+}
+.winkelmand__betaling--linken{
+    margin-bottom: 5.9rem;
+}
+.betaling__linken--flex{
+    display: flex;
+      margin-top: 5.97rem;
+      justify-content: space-evenly;
+      align-items: center;
+      width: 100%;
+}
+
+.winkelmand__betaling--link{
+    width: 14.4rem;
+    height: 4.9rem;
+}
+.betaling__link--big{
+    height: 7.5rem;
+    width: 35.20rem;
+    font-size: 3rem;
+}
+
+}
+
+@media only screen and (min-width: 1440px){
+  .header__home{
+      height: 57.6rem;
+  }
+  .header__home--wrapper{
+      margin-right: -20rem;
+  }
+  .header__img{
+      width: 82.7rem;
+      height: 62rem;
+
+  }
+  .header__title{
+      font-size: 4.8rem;
+  }
+  .header__subtitle{
+      font-size: 7rem;
+  }
+  .header__link{
+      font-size: 2.4rem;
+      width: 19.3rem;
+      height: 4.9rem;
+  }
+  .kaft{
+      height: 17.8rem;
+  }
+  .kaft__description--wrapper{
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+  }
+  .kaft__title{
+      font-size: 4.8rem;
+  }
+  .kaft__description{
+      text-align: center;
+  }
+  .kaft__image{
+      width: 58.51rem;
+      height: 29.26rem;
+      margin-top: 12rem;
+  }
+  .collectie__title{
+      font-size: 4.8rem;
+  }
+  .collectie__description{
+      width: 56rem;
+      margin-top: 2.6rem;
+  }
+  .collectie__image{
+      width: 61.1rem;
+      height: 44.6rem;
+      margin-left: 7.3rem;
+  }
+  .boeken__cover{
+      width: 22.4rem;
+      height: 31.8rem;
+  }
+  .ster__home{
+     top: 30rem;
+     right: -1rem;
+  }
+  .ster__bgi{
+      width: 13.8rem;
+      height: 13rem;
+  }
+  .ster__aantal{
+      font-size: 2.4rem;
+  }
+
+  .boeken__title{
+      font-size: 4rem;
+
+  }
+  .boeken__covers{
+      grid-template-columns: repeat(5, 22.4rem);
+  }
+  .gadgets__title{
+      font-size: 4rem;
+  }
+  .product__image{
+      width: 19.4rem;
+      height: 29.1rem;
+  }
+  .gadgets__products--humo{
+      grid-template-columns:repeat(3, 19.4rem);
+      width: 133.1rem;
+  }
+  .product__title{
+      font-size: 2rem;
+  }
+  .gadgets__products--acc{
+      grid-template-columns:repeat(4, 19.4rem);
+  }
+  .abonnement{
+      height: 54.9rem;
+  }
+  .abonnement__achtergrond{
+      height: 100%;
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 9rem 0;
+
+  }
+  .abonnement__image{
+      margin-top: unset;
+
+  }
+  .abonnement__flex{
+      flex-flow:row ;
+  }
+  .abonnement__points--wrapper{
+      width: 50%;
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      align-items: center;
+
+  }
+
+  .abonnement__point{
+      width: 30rem;
+  }
+  .abonnement__subtitle{
+      margin-top: 0;
+      text-align: left;
+  }
+  .abonnement__link{
+      margin-bottom: 0rem;
+  }
+  .product__detail--title{
+      width: unset;
+      font-size: 4.8rem;
+  }
+  .product__description{
+      width: 63.3rem;
+  }
+  .product__detail--images{
+      grid-template-rows: 52.4rem 16.4rem;
+      grid-column-gap: 6rem;
+  }
+  .image__big{
+     width: 35rem;
+     height: 52.4rem;
+  }
+  .image__small{
+      width: 10.9rem;
+      height: 16.4rem;
+  }
+  .review__form--section{
+      width: 35%;
+  }
+  .abonnement__description--flex{
+      display: flex;
+      justify-content: space-evenly;
+  }
+  .form__submit--abonnement{
+      margin: unset;
+      margin: 4.1rem 0;
+  }
+  .abonnement__prijs--maanden, .abonnement__prijs--aantal{
+      font-size: 3.6rem;
+  }
+  .abonnement__prijs--besparing, .abonnement__prijs--korting{
+      font-size: 2rem;
+  }
+
+  .abonnement__prijs > input{
+      width: 3.3rem;
+      height: 3.3rem;
+  }
+  .winkelmand__header{
+       width: 80%;
+      margin: auto;
+
+
+  }
+  .winkelmand__title{
+      width: 44.4rem;
+      font-size: 4.8rem;
+  }
+  .winkelmand__indicators{
+      width: 70.2rem;
+      margin: auto;
+      padding: 8.4rem 0rem ;
+  }
+  .winkelmand__indicator--number{
+      font-size: 4.8rem;
+  }
+  .winkelmand__products, .gegevens__formulier{
+      width: 133.1rem;
+  }
+  .winkelmand__links{
+      grid-template-areas:
+      '. . totaal'
+      'webshop kortingscode update'
+      '. . bestellen';
+      margin-top: 4rem;
+  }
+  .winkelmand__webshop{
+      margin-top: 5.2rem;
+  }
+  .section__title--related > h2{
+      text-align: left;
+  }
+  .related--flex{
+      margin-top: 8rem;
+  }
+  .gegevens__formulier{
+      font-size: 2.2rem;
+  }
+  .gegevens__form--huis{
+      width: 19.4rem;
+  }
+  .winkelmand__betaling--title{
+      font-size: 9.6rem;
+  }
+  .winkelmand__betaling--subtitle{
+      font-size: 4.8rem;
+  }
+  .betaling__linken--flex{
+      width: 60%;
+  }
 }
 
 
