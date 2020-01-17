@@ -34,7 +34,7 @@
         <p class="collectie__description">
             Om het jaar af te sluiten komt het weekblad Humo uit met een nieuwe boekenreeks. Tien weken lang kan u aan een voordelige prijs een boek bijkopen dat onderdeel vormt van een uitgelezen selectie social science fiction (soft SF). Boeken die een kritische, ironische of cynische blik geven op een toekomstige maatschappij. Geen aliens of magie maar dystopische wereldvisies die onze huidige maatschappij in vraag stellen.
         </p>
-        <a class="collectie__link link link--yellow" href="">Bestel de collectie</a>
+        <a class="collectie__link link link--yellow" href="index.php?page=detail&id=1">Bestel de collectie</a>
         </div>
       </section>
       <section class="boeken">
@@ -67,7 +67,7 @@
           <?php endforeach ;?>
         </div>
       </section>
-            
+
       <section class="gadgets">
         <div class="section--intro gadgets__sectie">
             <h2 class="section__title gadgets__title">Coole Gadgets</h2>

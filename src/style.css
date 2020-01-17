@@ -23,6 +23,9 @@ a {
   text-decoration: none;
   font-family: 'Swiss721BT-BoldCondensed';
 }
+p{
+  line-height: 2rem;
+}
 
 /* stylelint-disable */
 
@@ -282,7 +285,7 @@ a {
   justify-content: center;
 }
 .gadgets__products--humo{
-  background-image: url(/src/assets/fotos/bol.svg);
+  background-image: url(./assets/fotos/bol.svg);
   background-repeat: repeat-x ;
   background-position-y: bottom ;
   margin-bottom: 3rem;
@@ -527,6 +530,7 @@ input:checked{
 }
 .review__form{
   width: 90%;
+  margin-top: 3rem;
 }
 .review__form--section{
   font-family: "Swiss721BT-BoldCondensed";
@@ -1010,6 +1014,9 @@ input:checked{
   font-size: 3.6rem;
   color: #E2001A;
 }
+.image__collectionbox{
+  width: 34.90rem;
+}
 
 @media only screen and (min-width: 835px){
 .header__home{
@@ -1089,7 +1096,7 @@ input:checked{
     height: 9.2rem;
 }
 .boeken{
-  background-image: url(/src/assets/fotos/bol.svg);
+  background-image: url(./assets/fotos/bol.svg);
   background-repeat: repeat-x;
   background-position-y: 3.5rem;
   background-size: .8rem;
@@ -1129,7 +1136,7 @@ input:checked{
 }
 .prijs__type{
     font-size: 2.8rem;
-    margin-top: .55rem;
+    margin-top: 1.5rem;
 }
 .prijs__korting{
     font-size: 1.8rem;
@@ -1244,6 +1251,7 @@ input:checked{
     display: flex;
     flex-flow: row-reverse;
     justify-content: space-evenly;
+  margin-top: 5rem;
 }
 .image__big{
     width: 24.425rem;
@@ -1523,6 +1531,10 @@ input:checked{
     width: 35.20rem;
     font-size: 3rem;
 }
+.image__collectionbox{
+  width: 31.4rem;
+  height: 22.629rem;
+}
 
 }
 
@@ -1750,6 +1762,10 @@ input:checked{
   }
   .betaling__linken--flex{
       width: 60%;
+  }
+  .image__collectionbox{
+    width: 50.8rem;
+    height: 37.08rem;
   }
 }
 
