@@ -1,3 +1,65 @@
+<?php if($product['abonnement'] === 1) :?>
+  <div class="yellow__bg"></div>
+    <section class="abonnement__header">
+
+      <a href="./index.php?" class="backlink">
+        <h2 class="hidden">Humo abonnement</h2>
+        <img src="../assets/fotos/pijl.png" alt="home link" width="19.47" height="16.22" class="backlink__pijl">
+        </a>
+        <picture>
+            <source media="(max-width: 834px)" srcset="../assets/products/abonnementen/abonnement_small.png">
+            <source media="(min-width: 835px)" srcset="../assets/products/abonnementen/abonnement__big.png">
+            <img src="../assets/products/abonnementen/abonnement__big.png" alt="abonnement" class="abonnement__image abonnement__image--detail">
+    </picture>
+    </section>
+    <section class="abonnement__info">
+        <h2 class="info__title">!!! ABONNEER NU !!!</h2>
+        <p class="info__subtitle">DIGITAAL + PAPIER</p>
+    </section>
+    <div class="abonnement__description--flex">
+    <section class="abonnement__description">
+
+        <p class="info__description">Door de wol geverfde journalisten en een roedel jonge wolven maken week na week van Humo een blad met zo’n sterke inhoud dat u het niet naast u neer kunt leggen. Spraakmakende coverstory’s, diep in en achter de actualiteit. Onthullende interviews en dossiers met een aparte kijk op onderwerpen die er echt toe doen. Eerder dan het nieuws achterna te hollen, gaat Humo er zélf naar op zoek — ook als het goed nieuws is. Daar bovenop sprankelende stukken over sport, film, pop en jongerencultuur, de snedigste columns, eigenzinnige boeken-, concert-, festival- en cd-besprekingen, leuke wedstrijden en humor, véél humor. U vindt Humo natuurlijk ook op het web, Facebook, Twitter en op uw tablet.</p>
+        <ul class="info__list">
+            <li class="info__list--item"> <p> Onbeperkte toegang tot straffe onderzoeksjournalistiek</p></li>
+            <li class="info__list--item"> <p>Eigenzinnige columns en het beste uit film, muziek en literatuur</p></li>
+            <li class="info__list--item"> <p> Lees Humo waar en wanneer u wilt, op papier en tablet</p>
+            </li>
+        </ul>
+    </section>
+    <section class="abonnement__prijzen">
+        <form action="" method="POST" class="abonnement__form">
+            <label for="prijs">
+                <div class="abonnement__prijs">
+                    <input type="radio" value="1" name="prijs">
+                    <p class="abonnement__prijs--maanden">12 maanden </p>
+                    <p class="abonnement__prijs--aantal" >€ 16,50/mnd</p>
+                </div>
+
+            </label>
+            <label for="prijs">
+                <div class="abonnement__prijs">
+                    <input type="radio" value="2" name="prijs">
+                    <p class="abonnement__prijs--maanden">24 maanden </p>
+                    <p class="abonnement__prijs--aantal" >€ 14,85/mnd</p>
+                    <p class="abonnement__prijs--besparing">U bespaart 39€</p>
+                    <p class="abonnement__prijs--korting">10% korting</p>
+                </div>
+            </label>
+            <label for="prijs">
+                <div class="abonnement__prijs">
+                    <input type="radio" value="3" name="prijs">
+                    <p class="abonnement__prijs--maanden">36 maanden </p>
+                    <p class="abonnement__prijs--aantal" >€ 13,20/mnd</p>
+                    <p class="abonnement__prijs--besparing">U bespaart 118€</p>
+                    <p class="abonnement__prijs--korting">20% korting</p>
+                </div>
+            </label>
+            <input type="submit" value="ABONNEREN" class="link form__submit link--red form__submit--abonnement" >
+        </form>
+    </section>
+</div>
+<?php else : ?>
 <header class="kaft kaft--yellow">
           <h2 class="hidden">Humo Collector kaft</h2>
           <div class="kaft__description--wrapper">
@@ -15,26 +77,28 @@
         <img src="../assets/fotos/pijl.png" alt="home link" width="19.47" height="16.22" class="backlink__pijl">
         </a>
         <section class="product__detail">
-          <?php if($book['collectionbox'] === 1) : ?>
+          <?php if($product['collectionbox'] === 1) : ?>
 
-                <img src="<?php echo $book['picture1']; ?>" alt="<?php echo $book['name']; ?> combo" class="product__image image__big image__collectionbox">
+                <img src="<?php echo $product['picture1']; ?>" alt="<?php echo $product['name']; ?> combo" class="product__image image__big image__collectionbox">
 
 
             <?php else : ?>
             <div class="product__detail--images">
-                <img src="<?php echo $book['picture1'] ?>" alt="<?php echo $book['name'] ?> combo" class="product__image image__big">
-                <img src="<?php echo $book['picture2'] ?>" alt="<?php echo $book['name'] ?> originele cover" class="product__image image__small">
-                <img src="<?php echo $book['picture3'] ?>" alt="<?php echo $book['name'] ?> Humo cover" class="product__image image__small">
+                <img src="<?php echo $product['picture1'] ?>" alt="<?php echo $product['name'] ?> combo" class="product__image image__big">
+                <img src="<?php echo $product['picture2'] ?>" alt="<?php echo $product['name'] ?> originele cover" class="product__image image__small">
+                <?php if($product['picture3'] !== '-') : ?>
+                <img src="<?php echo $product['picture3'] ?>" alt="<?php echo $product['name'] ?> Humo cover" class="product__image image__small">
+                <?php endif ?>
             </div>
             <?php endif; ?>
             <div class="product__detail-wrapper">
-                <h2 class="product__detail--title"><?php echo $book['name'] ?></h2>
+                <h2 class="product__detail--title"><?php echo $product['name'] ?></h2>
             <p class="product__description">
-            <?php echo $book['description'] ?>
+            <?php echo $product['description'] ?>
             </p>
             <div class="product__prijzen">
-                <p class="product__detail--prijs"><?php echo $book['price'] ?></p>
-                <?php if($book['book'] === 1) : ?>
+                <p class="product__detail--prijs"><?php echo $product['price'] ?>€</p>
+                <?php if($product['book'] === 1) : ?>
                 <div class="ster__prijs ster__detail">
                     <p class="ster__aantal">Met code <br> <span class="ster__euros">4,99€</span></p>
                     <img class="ster__bgi ster__detail" src="../assets/fotos/ster.png" alt="ster" width="119.3" height="112.38">
@@ -42,12 +106,12 @@
                 <?php endif ?>
             </div>
                 <form action="" method="post" class="product__versies">
-                  <?php if($book['book'] === 1) : ?>
+                  <?php if($product['book'] === 1) : ?>
                     <div class="product__versies--flex">
                     <span>Versie :</span>
                     <label for="versie" class="product__versie">
-                        <input type="radio" value="1" name="versie" class="product__versie--input"><?php echo $book['type1'] ?>
-                        <input type="radio" value="2" name="versie" class="product__versie--rechts"><?php echo $book['type2'] ?>
+                        <input type="radio" value="1" name="versie" class="product__versie--input"><?php echo $product['type1'] ?>
+                        <input type="radio" value="2" name="versie" class="product__versie--rechts"><?php echo $product['type2'] ?>
                         <span class="error"></span>
                     </label>
                 </div>
@@ -71,8 +135,8 @@
 
             </div>
             <?php if(empty($reviews)) : ?>
-              <div class="review">
-                    <p class="review__author">Er zijn nog geen reviews voor deze product</p>
+              <div class="review no__review">
+                    <p class="review__author ">Er zijn nog geen reviews voor deze product</p>
             </div>
             <?php else :?>
             <?php foreach($reviews as $review) : ?>
@@ -90,8 +154,8 @@
         </section>
         <section class="review__form--section">
             <h2 class="review__form--title">Geef jouw mening !</h2>
-            <form action="index.php?page=detail&id=<?php echo $book['id'];?>" method="post" class="review__form">
-               <input type="hidden" name="book_id" value="<?php echo $book['id']; ?>">
+            <form action="index.php?page=detail&id=<?php echo $product['id'];?>" method="post" class="review__form">
+               <input type="hidden" name="book_id" value="<?php echo $product['id']; ?>">
                <input type="hidden" name="action" value="insertReview">
                <label for="score" class="review__form--scores">
                 <span>Score :</span>
@@ -155,3 +219,4 @@
             </div>
         </div>
         </section>
+        <?php endif ; ?>

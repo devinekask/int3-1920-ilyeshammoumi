@@ -16,17 +16,21 @@ class ProductsController extends Controller {
 
   public function index() {
   $books = $this ->productDAO->selectAllBooks();
+  $humoProducts = $this->productDAO->selectAllHumoProducts();
+  $products = $this->productDAO->selectAllProducts();
 
   $this->set('books', $books);
+  $this->set('humoProducts', $humoProducts);
+  $this->set('products', $products);
   $this->set('title', 'Home');
 
   }
 
   public function detail() {
     if(!empty($_GET['id'])){
-      $book = $this->productDAO->selectBookById($_GET['id']);
+      $product = $this->productDAO->selectBookById($_GET['id']);
     }
-    if(empty($book)){
+    if(empty($product)){
       $_SESSION['error'] = 'Deze product werd niet gevonden';
       header('Location:index.php');
       exit();
@@ -45,7 +49,7 @@ class ProductsController extends Controller {
         }
       }
     }
-    $this->set('book',$book);
+    $this->set('product',$product);
     $this->set('reviews', $this->reviewDAO->selectReviewsByProducts($_GET['id']));
     $this->set('title','Details');
   }

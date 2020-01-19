@@ -59,7 +59,7 @@
             </div>
         </div>
         <div class="boeken__covers grid">
-          <?php foreach ($books as $book) :?>
+        <?php foreach($books as $book) : ?>
 
             <a href="index.php?page=detail&id=<?php echo $book['id']; ?>">
             <img src="<?php echo $book['picture3']; ?>" alt="<?php echo $book['name']; ?>" class="boeken__cover" width="123.53" height="175.37">
@@ -73,73 +73,36 @@
             <h2 class="section__title gadgets__title">Coole Gadgets</h2>
         </div>
         <div class="gadgets__products grid gadgets__products--humo">
-            <div class="gadgets__product ">
-                <a href="./pages/product-detail.html">
-                <img src="./assets/products/agenda/agenda_cover.jpg" alt="Humo Agenda 2020" class="product__image" width="123.53" height="175.37">
-            </a>
-                <p class="product__title">
-                    Humo agenda 2020
-                </p>
-                <div class="product__prijs">
-                    16,95€
-                </div>
-            </div>
+          <?php foreach($humoProducts as $humoProduct) : ?>
             <div class="gadgets__product">
-                <img src="./assets/products/agenda/agenda_cover.jpg" alt="Humo Agenda 2020" class="product__image" width="123.53" height="175.37">
+                <a href="index.php?page=detail&id=<?php echo $humoProduct['id']; ?>">
+                <img src="<?php echo $humoProduct['picture1']; ?>" alt="<?php echo $humoProduct['name']; ?>" class="product__image" width="123.53" height="175.37">
+                </a>
                 <p class="product__title">
-                    Humo agenda 2020
+                <?php echo $humoProduct['name']; ?>
                 </p>
                 <div class="product__prijs">
-                    16,95€
+                <?php echo $humoProduct['price'];?> €
                 </div>
             </div>
-            <div class="gadgets__product">
-                <img src="./assets/products/agenda/agenda_cover.jpg" alt="Humo Agenda 2020" class="product__image" width="123.53" height="175.37">
-                <p class="product__title">
-                    Humo agenda 2020
-                </p>
-                <div class="product__prijs">
-                    16,95€
-                </div>
-            </div>
+            <?php endforeach ; ?>
+
         </div>
         <div class="gadgets__products grid gadgets__products--acc">
+        <?php foreach($products as $product) : ?>
             <div class="gadgets__product">
-                <img src="./assets/products/minileeslamp/minileeslamp_cover.jpg" alt="Mini boekenlicht" class="product__image" width="123.53" height="175.37">
+              <a href="index.php?page=detail&id=<?php echo $product['id']; ?>">
+                <img src="<?php echo $product['picture1']; ?>" alt="<?php echo $product['name']; ?>" class="product__image" width="123.53" height="175.37">
+                </a>
                 <p class="product__title">
-                    Mini boekenlicht
+                <?php echo $product['name']; ?>
                 </p>
                 <div class="product__prijs">
-                    9,90€
+                <?php echo $product['price']; ?>
                 </div>
             </div>
-            <div class="gadgets__product">
-                <img src="./assets/products/minileeslamp/minileeslamp_cover.jpg" alt="Mini boekenlicht" class="product__image" width="123.53" height="175.37">
-                <p class="product__title">
-                    Mini boekenlicht
-                </p>
-                <div class="product__prijs">
-                    9,90€
-                </div>
-            </div>
-            <div class="gadgets__product">
-                <img src="./assets/products/minileeslamp/minileeslamp_cover.jpg" alt="Mini boekenlicht" class="product__image" width="123.53" height="175.37">
-                <p class="product__title">
-                    Mini boekenlicht
-                </p>
-                <div class="product__prijs">
-                    9,90€
-                </div>
-            </div>
-            <div class="gadgets__product">
-                <img src="./assets/products/minileeslamp/minileeslamp_cover.jpg" alt="Mini boekenlicht" class="product__image" width="123.53" height="175.37">
-                <p class="product__title">
-                    Mini boekenlicht
-                </p>
-                <div class="product__prijs">
-                    9,90€
-                </div>
-            </div>
+
+        <?php endforeach ; ?>
 
         </div>
 
@@ -169,7 +132,7 @@
                     <img class="ster__bgi ster__bgi--abonnement" src="./assets/fotos/ster.png" alt="ster" width="79.25" height="74.65">
                 </div>
             </ul>
-            <a class="abonnement__link link link--red" href="./pages/abonnement-detail.html">bekijk het aanbod</a>
+            <a class="abonnement__link link link--red" href="index.php?page=detail&id=19">bekijk het aanbod</a>
         </div>
         </div>
 

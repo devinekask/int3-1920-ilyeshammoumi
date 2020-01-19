@@ -725,7 +725,7 @@ input:checked{
                        'leeg besparing korting';
   grid-gap: 1rem;
   margin-top: 2.63rem;
-  background-image: url(/src/assets/fotos/bol.svg);
+  background-image: url(./assets/fotos/bol.svg);
   background-repeat: repeat-x;
   background-position-y: bottom ;
   padding-bottom: 2.2rem;
@@ -1017,6 +1017,13 @@ input:checked{
 .image__collectionbox{
   width: 34.90rem;
 }
+.no__review{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 
 @media only screen and (min-width: 835px){
 .header__home{
@@ -1766,6 +1773,9 @@ input:checked{
   .image__collectionbox{
     width: 50.8rem;
     height: 37.08rem;
+  }
+  .info__list--item{
+    justify-content: unset;
   }
 }
 
