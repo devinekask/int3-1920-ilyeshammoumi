@@ -16,7 +16,7 @@
       <a href="" class="footer__link">Colofon</a>
       <a href="" class="footer__link">Contact</a>
       <a href="" class="footer__link">Cookie instellingen</a>
-      <a href="../html/pages/winkelmand-overzicht.html" class="footer__link">Winkelmand</a>
+      <a href="index.php?page=cart" class="footer__link">Winkelmand</a>
     </div>
   </footer>
     <?php echo $js; ?>

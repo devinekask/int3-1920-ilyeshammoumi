@@ -29,7 +29,7 @@ class ProductDAO extends DAO {
   }
 
 
-  public function selectBookById($id){
+  public function selectProductById($id){
     $sql = "SELECT * FROM `int3_products` WHERE `id` = :id";
     $stmt = $this->pdo->prepare($sql);
     $stmt->bindValue(':id',$id);

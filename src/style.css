@@ -697,7 +697,6 @@ input:checked{
   margin-bottom: 1.5rem;
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 .info__list--item > p{
   margin-left: 5.3rem;
@@ -765,7 +764,7 @@ input:checked{
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(/src/assets/fotos/bol.svg);
+  background-image: url(./assets/fotos/bol.svg);
   background-repeat: repeat-x;
   background-position-y: center;
   margin: 2.625rem 0 1.392rem 0;
@@ -783,7 +782,7 @@ input:checked{
 }
 .indicator__bolletjes{
   width: 5.247rem;
-  background-image: url(/src/assets/fotos/bol.svg);
+  background-image: url(./assets/fotos/bol.svg);
   background-repeat: repeat-x;
   background-position-y: center;
   opacity: 40%;
@@ -896,8 +895,10 @@ input:checked{
   font-family: "Swiss721BT-BoldCondensed";
   background-color: white;
 }
-.winkelmand__bestellen{
+.winkelmand__bestellen--subtmit{
   grid-area: bestellen;
+  padding: unset;
+  border: unset;
 }
 .winkelmand__betaling--linken{
   display: flex;
@@ -1021,6 +1022,9 @@ input:checked{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.remove{
+  border: unset;
 }
 
 
@@ -1399,6 +1403,7 @@ input:checked{
 }
 .winkelmand__indicator--name{
     font-size: 2.4rem;
+    margin-top: 2rem;
 }
 .winkelmand__products{
     width: 77.44rem;

@@ -105,27 +105,27 @@
                 </div>
                 <?php endif ?>
             </div>
-                <form action="" method="post" class="product__versies">
-                  <?php if($product['book'] === 1) : ?>
-                    <div class="product__versies--flex">
+            <form method="post" action="index.php?page=cart">
+                <?php if($product['collectionbox'] === 0) : ?>
+                    <div class="product__versies">
                     <span>Versie :</span>
                     <label for="versie" class="product__versie">
                         <input type="radio" value="1" name="versie" class="product__versie--input"><?php echo $product['type1'] ?>
                         <input type="radio" value="2" name="versie" class="product__versie--rechts"><?php echo $product['type2'] ?>
-                        <span class="error"></span>
                     </label>
                 </div>
                 <?php endif ?>
-                    <div class="versies__aantal--flex">
+                <div class="versies__aantal--flex">
                     <div class="product__versies--aantal">
                         <span>Aantal :</span>
                         <label for="aantal">
-                            <input type="number" id="aantal" name="aantal" min="1" placeholder="1" class="input__aantal">
-                        </label>
+                  <input type="number" name="id" value="<?php echo $product['id'];?>" />
+                  </label>
                     </div>
-                    <input type="submit" value="Toevoegen aan winkelmand" class="product__submit">
-                </div>
+                  <button class="product__submit" type="submit" name="action" value="add">Add to cart</button>
+                  </div>
                 </form>
+
             </div>
         </section>
         <div class="reviews--flex">
@@ -139,7 +139,7 @@
                     <p class="review__author ">Er zijn nog geen reviews voor deze product</p>
             </div>
             <?php else :?>
-            <?php foreach($reviews as $review) : ?>
+            <?php session_destroy(); foreach($reviews as $review) : ?>
             <div class="review">
                 <div class="review--flex">
                     <p class="review__author"><?php echo $review['naam']?></p>
@@ -155,7 +155,7 @@
         <section class="review__form--section">
             <h2 class="review__form--title">Geef jouw mening !</h2>
             <form action="index.php?page=detail&id=<?php echo $product['id'];?>" method="post" class="review__form">
-               <input type="hidden" name="book_id" value="<?php echo $product['id']; ?>">
+               <input type="hidden" name="product_id" value="<?php echo $product['id']; ?>">
                <input type="hidden" name="action" value="insertReview">
                <label for="score" class="review__form--scores">
                 <span>Score :</span>
@@ -184,7 +184,7 @@
                </label>
                <label for="opmerkingen" class="review__form--name">
                     <span>Opmerkingen :</span>
-                    <textarea name="opmerkingen" id="opmerkingen" class="form__textarea"  value="<?php if(!empty($_POST['review'])){ echo $_POST['review'];} ?>" required></textarea>
+                    <textarea name="opmerkingen" id="opmerkingen" class="form__textarea"  value="<?php if(!empty($_POST['opmerking'])){ echo $_POST['opmerking'];} ?>" required></textarea>
                     <span class="error"><?php if(!empty($errors)  && isset($errors['review'])){ echo $errors['review'];} ?></span>
                 </label>
                 <input type="submit" value="Versturen" class="link form__submit link--red">

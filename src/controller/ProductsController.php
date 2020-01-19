@@ -28,7 +28,7 @@ class ProductsController extends Controller {
 
   public function detail() {
     if(!empty($_GET['id'])){
-      $product = $this->productDAO->selectBookById($_GET['id']);
+      $product = $this->productDAO->selectProductById($_GET['id']);
     }
     if(empty($product)){
       $_SESSION['error'] = 'Deze product werd niet gevonden';
@@ -39,6 +39,11 @@ class ProductsController extends Controller {
     if(!empty($_POST['action'])){
       if($_POST['action'] == 'insertReview'){
         $lastInsertedQuote = $this->reviewDAO->insertReview($_POST);
+        $data = array(
+          'score' => (int)$_POST['score'],
+          'naam' => $_POST['naam'],
+          'opmerking' => $_POST['opmerking'],
+          'product_id' => $_POST['product_id'] );
         if(!$lastInsertedQuote){
           $errors = $this->reviewDAO->validate($_POST);
           $this->set('errors', $errors);

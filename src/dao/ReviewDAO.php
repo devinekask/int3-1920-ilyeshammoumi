@@ -24,12 +24,12 @@ class ReviewDAO extends DAO {
   public function insertReview($data){
     $errors = $this->validate($data);
     if(empty($errors)){
-      $sql = "INSERT INTO `int3_reviews`(`product_id`, `opmerking`, `naam`, `score`) VALUES (:product_id, :opmerking, :naam, :score)";
+      $sql = "INSERT INTO `int3_reviews` (`id`, `score`, `naam`, `opmerking`, `product_id`) VALUES (NULL, :score, :naam, :opmerking, :product_id)";
       $stmt = $this->pdo->prepare($sql);
-      $stmt->bindValue(':product_id', $data['product_id']);
-      $stmt->bindValue(':opmerking', $data['opmerking']);
-      $stmt->bindValue(':naam', $data['naam']);
       $stmt->bindValue(':score', $data['score']);
+      $stmt->bindValue(':naam', $data['naam']);
+      $stmt->bindValue(':opmerking', $data['opmerking']);
+      $stmt->bindValue(':product_id', $data['product_id']);
       if($stmt->execute()){
         return $this->selectReviewById($this->pdo->lastInsertId());
       }
