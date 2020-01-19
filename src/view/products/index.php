@@ -97,9 +97,9 @@
                 <p class="product__title">
                 <?php echo $product['name']; ?>
                 </p>
-                <div class="product__prijs">
-                <?php echo $product['price']; ?>
-                </div>
+                <p class="product__prijs">
+                <?php echo $product['price']; ?> €
+                </p>
             </div>
 
         <?php endforeach ; ?>

@@ -32,7 +32,7 @@
             <div class="winkelmand__product">
                 <div class="winkelmand__product--info">
                 <a href="index.php?page=detail&amp;id=<?php echo $item['product']['id'];?>">
-                    <img src="<?php echo $item['product']['picture3'];?>" alt="vergrootglass" class="winkelmand__product--image">
+                    <img src="<?php echo $item['product']['picture1'];?>" alt="vergrootglass" class="winkelmand__product--image">
                     </a>
                  <div class="product--info__flex">
                         <h3 class="winkelmand__product--title"><?php echo $item['product']['name'];?></h3>

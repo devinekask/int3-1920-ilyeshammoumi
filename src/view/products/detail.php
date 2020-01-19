@@ -28,34 +28,35 @@
         </ul>
     </section>
     <section class="abonnement__prijzen">
-        <form action="" method="POST" class="abonnement__form">
+        <form action="index.php?page=cart" method="post" class="abonnement__form">
             <label for="prijs">
                 <div class="abonnement__prijs">
-                    <input type="radio" value="1" name="prijs">
-                    <p class="abonnement__prijs--maanden">12 maanden </p>
-                    <p class="abonnement__prijs--aantal" >€ 16,50/mnd</p>
+                    <input type="radio" value="<?php echo $product['abo_maand1'] ?>" name="prijs">
+                    <p class="abonnement__prijs--maanden"><?php echo $product['abo_maand1'] ?> </p>
+                    <p class="abonnement__prijs--aantal" >€<?php echo $product['abo_prijs1'] ?>/mnd</p>
                 </div>
 
             </label>
             <label for="prijs">
                 <div class="abonnement__prijs">
-                    <input type="radio" value="2" name="prijs">
-                    <p class="abonnement__prijs--maanden">24 maanden </p>
-                    <p class="abonnement__prijs--aantal" >€ 14,85/mnd</p>
+                    <input type="radio" value="<?php echo $product['abo_maand2'] ?> " name="prijs">
+                    <p class="abonnement__prijs--maanden"><?php echo $product['abo_maand2'] ?> </p>
+                    <p class="abonnement__prijs--aantal" >€<?php echo $product['abo_prijs2'] ?>/mnd</p>
                     <p class="abonnement__prijs--besparing">U bespaart 39€</p>
                     <p class="abonnement__prijs--korting">10% korting</p>
                 </div>
             </label>
             <label for="prijs">
                 <div class="abonnement__prijs">
-                    <input type="radio" value="3" name="prijs">
-                    <p class="abonnement__prijs--maanden">36 maanden </p>
-                    <p class="abonnement__prijs--aantal" >€ 13,20/mnd</p>
+                    <input type="radio" value="<?php echo $product['abo_maand3'] ?>" name="prijs">
+                    <p class="abonnement__prijs--maanden"><?php echo $product['abo_maand3'] ?></p>
+                    <p class="abonnement__prijs--aantal" >€<?php echo $product['abo_prijs3'] ?>/mnd</p>
                     <p class="abonnement__prijs--besparing">U bespaart 118€</p>
                     <p class="abonnement__prijs--korting">20% korting</p>
                 </div>
             </label>
-            <input type="submit" value="ABONNEREN" class="link form__submit link--red form__submit--abonnement" >
+            <input type="hidden" name="id" value="<?php echo $product['id'];?>" />
+            <button class="link form__submit link--red form__submit--abonnement" type="submit" name="action" value="add">ABONNEREN</button>
         </form>
     </section>
 </div>
@@ -110,8 +111,8 @@
                     <div class="product__versies">
                     <span>Versie :</span>
                     <label for="versie" class="product__versie">
-                        <input type="radio" value="1" name="versie" class="product__versie--input"><?php echo $product['type1'] ?>
-                        <input type="radio" value="2" name="versie" class="product__versie--rechts"><?php echo $product['type2'] ?>
+                        <input type="radio" value="<?php echo $product['type1'] ?>" name="versie" class="product__versie--input"><?php echo $product['type1'] ?>
+                        <input type="radio" value="<?php echo $product['type2'] ?>" name="versie" class="product__versie--rechts"><?php echo $product['type2'] ?>
                     </label>
                 </div>
                 <?php endif ?>
