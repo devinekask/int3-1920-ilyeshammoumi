@@ -19,39 +19,46 @@
         </div>
     </section>
 
-    <section class="winkelmand__products">
-        <form action="index.php?page=cart" method="post" class="winkelmand__booking--product">
-            <h2 class="hidden">inhoud van winkelmand</h2>
-            <?php
-            $total = 0;
-            foreach($_SESSION['cart'] as $item){
-              $itemTotal = $item['product']['price'] * $item['quantity'];
-              $total += $itemTotal;
-            }
-            ?>
-            <div class="winkelmand__product">
+<section class="winkelmand__products">
+<form class="winkelmand__booking--product" action="index.php?page=cart" method="post" id="cartform">
+<h2 class="hidden">inhoud van winkelmand</h2>
+
+          <?php
+          $total = 0;
+          foreach($_SESSION['cart'] as $item) {
+            $itemTotal = $item['product']['price'] * $item['quantity'];
+            $total += $itemTotal;
+
+          ?>
+          <div class="winkelmand__product">
                 <div class="winkelmand__product--info">
-                <a href="index.php?page=detail&amp;id=<?php echo $item['product']['id'];?>">
-                    <img src="<?php echo $item['product']['picture1'];?>" alt="vergrootglass" class="winkelmand__product--image">
-                    </a>
-                 <div class="product--info__flex">
-                        <h3 class="winkelmand__product--title"><?php echo $item['product']['name'];?></h3>
-                        <p class="winkelmand__product--specs">Geen specificaties</p>
-                         <p class="winkelmand__product--prijs">Prijs P.P : <?php echo $item['product']['price'];?>€</p>
-                    </div>
-                </div>
-                <div class="winkelmand__product--inputs">
-                <label for="quantity" class="winkelmand__product--label">
-                    <span class="winkelmand__product--aantal">Aantal : </span>
-                    <input type="number" name="quantity[<?php echo $item['product']['id'];?>]" class="winkelmand__product--input" min=1>
-                </label>
-                <button type="submit" class="remove" name="remove" value="<?php echo $item['product']['id'];?>"><img src="../assets/fotos/cross.svg" alt="cross"></button>
-                </div>
+                   <a href="index.php?page=detail&amp;id=<?php  echo $item['product']['id'];?>">
+                     <img class='winkelmand__product--image' src="<?php  echo $item['product']['picture1'];?>"  alt="<?php echo $item['product']['name'];?>" />
+                   </a>
+                   <div class="product--info__flex">
+                   <h3 class="winkelmand__product--title"><?php   echo $item['product']['name'];?></h3>
+                   <p class="winkelmand__product--specs">Versie : <?php if(!empty($_SESSION["cart"][$item['product']['id']]["versie"])) echo $_SESSION["cart"][$item['product']['id']]["versie"];?></p>
+                   <p class="winkelmand__product--prijs">Prijs P.P : <?php echo money_format("%i", $item['product']['price']);?></p>
+              </div>
+              </div>
+
+              <div class="winkelmand__product--inputs">
+                <label for="" class="winkelmand__product--label">
+                <span class="winkelmand__product--aantal">Aantal : </span>
+
+
+            <input class="winkelmand__product--input" type="number" size="4" name="quantity[<?php echo $item['product']['id'];?>]" value="<?php echo $_SESSION["cart"][$item['product']['id']]["quantity"];?>" class="replace" />
+            <button type="submit" class="remove" name="remove" value="<?php echo $item['product']['id'];?>"><img src="../assets/fotos/cross.svg" alt="kruis"></button>
+            </div>
             </div>
 
 
-    </section>
+          <?php
+          }
+          ?>
 
+
+        </section>
     <div class="winkelmand__links--wrapper">
     <section class="winkelmand__links">
 
@@ -66,7 +73,6 @@
         </div>
         <button type="submit" id="update-cart" class="link link--black winkelmand__update " name="action" value="update">Update Cart</button>
         <button class="winkelmand__bestellen--subtmit" type="submit" id="checkout" name="action"  value="checkout"><a href="winkelmand-gegevens.html" class="link link--red winkelmand__bestellen ">Verder met bestellen</a></button>
-
     </section>
 </div>
 <section class="related winkelmand__related">

@@ -8,7 +8,22 @@
      <?php echo $css;?>
   </head>
   <body>
-
+      <nav class="navigation">
+        <ul class="navigation__list navigation__mobile">
+          <li class="navigation__list--item"><a href="index.php?" class="list__item--link">HOME</a></li>
+          <li class="navigation__list--item link--yellow"><a href="" class="list__item--link link--yellow">HUMO@FESTIVALS</a></li>
+          <li class="navigation__list--item"><a href="" class="list__item--link">HUMOR</a></li>
+          <li class="navigation__list--item"><a href="" class="list__item--link">VIDEO</a></li>
+          <li class="navigation__list--item link--red"><a href="" class="list__item--link link--red">VIDEO</a></li>
+          <li class="navigation__list--item"><a href="" class="list__item--link">FOTOSPECIALS</a></li>
+          <li class="navigation__list--item"><a href="" class="list__item--link">NU IN HUMO</a></li>
+          <li class="navigation__list--item"><a href="" class="list__item--link">TV/FILM</a></li>
+          <li class="navigation__list--item"><a href="" class="list__item--link">ACTUA</a></li>
+          <li class="navigation__list--item"><a href="" class="list__item--link">MUZIEK</a></li>
+          <li class="navigation__list--item"><a href="" class="list__item--link">BOEKEN</a></li>
+          <li class="navigation__list--item link--purple"><a href="" class="list__item--link link--purple">HUMO SAPIENS</a></li>
+        </ul>
+      </nav>
       <?php echo $content;?>
     <footer class="footer">
       <div class="footer__flex footer__mobile">
@@ -60,7 +75,7 @@
         <a href="" class="footer__link">NON-FICTIE</a>
         <a href="" class="footer__link">HET LEZEN ZOALS HET IS</a>
         <a href="" class="footer__link">DE GROOTSTE SCHRIJVERS VAN DEZE TIJD</a>
-      
+
         <a href="" class="footer__link footer__link--title">Ga naar</a>
         <a href="" class="footer__link">VIDEO</a>
         <a href="" class="footer__link">FOTO'S</a>

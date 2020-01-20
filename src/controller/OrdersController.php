@@ -59,11 +59,13 @@ class OrdersController extends Controller {
       }
       $_SESSION['cart'][$_POST['id']] = array(
         'product' => $product,
-        'quantity' => 0
+        'quantity' => 0,
+        'versie' => ""
       );
     }
     $_SESSION['cart'][$_POST['id']]['quantity']++;
-
+    if(!empty($_POST["quantity"]))$_SESSION['cart'][$_POST['id']]['quantity'] = $_POST["quantity"];
+    if(!empty($_POST["versie"]))$_SESSION['cart'][$_POST['id']]['versie'] = $_POST["versie"];
     $this->set('currentpage', 'handleAdd');
   }
 

@@ -7,9 +7,9 @@
         <img src="../assets/fotos/pijl.png" alt="home link" width="19.47" height="16.22" class="backlink__pijl">
         </a>
         <picture>
-            <source media="(max-width: 834px)" srcset="../assets/products/abonnementen/abonnement_small.png">
-            <source media="(min-width: 835px)" srcset="../assets/products/abonnementen/abonnement__big.png">
-            <img src="../assets/products/abonnementen/abonnement__big.png" alt="abonnement" class="abonnement__image abonnement__image--detail">
+            <source media="(max-width: 834px)" srcset="./assets/products/abonnementen/abonnement_small.png">
+            <source media="(min-width: 835px)" srcset="./assets/products/abonnementen/abonnement__big.png">
+            <img src="./assets/products/abonnementen/abonnement__big.png" alt="abonnement" class="abonnement__image abonnement__image--detail">
     </picture>
     </section>
     <section class="abonnement__info">
@@ -107,22 +107,24 @@
                 <?php endif ?>
             </div>
             <form method="post" action="index.php?page=cart">
-                <?php if($product['collectionbox'] === 0) : ?>
-                    <div class="product__versies">
+                <?php if($product['id'] > 12) : ?>
+                    <div class="product__versies--aantal">
                     <span>Versie :</span>
                     <label for="versie" class="product__versie">
-                        <input type="radio" value="<?php echo $product['type1'] ?>" name="versie" class="product__versie--input"><?php echo $product['type1'] ?>
-                        <input type="radio" value="<?php echo $product['type2'] ?>" name="versie" class="product__versie--rechts"><?php echo $product['type2'] ?>
+                        <input  type="radio" value="rood" name="versie" class="product__versie--input">rood
+                        <input type="radio" value="blauw" name="versie" class="product__versie--rechts">blauw
+                        <input type="radio" value="geel" name="versie" class="product__versie--rechts">geel
                     </label>
                 </div>
                 <?php endif ?>
                 <div class="versies__aantal--flex">
                     <div class="product__versies--aantal">
                         <span>Aantal :</span>
-                        <label for="aantal">
-                  <input type="number" name="id" value="<?php echo $product['id'];?>" />
+                  <label for="quantity">
+                  <input type="number" id="quantity" name="quantity" min="1" placeholder="1" value="1" class="input__aantal">
                   </label>
                     </div>
+                  <input type="hidden" name="id" value="<?php echo $product['id'];?>" />
                   <button class="product__submit" type="submit" name="action" value="add">Add to cart</button>
                   </div>
                 </form>

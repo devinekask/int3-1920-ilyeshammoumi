@@ -167,6 +167,18 @@ p {
   margin: auto;
   text-align: center;
 }
+.navigation__list--item{
+  width: 100%;
+  display: block;
+}
+.navigation__list--item{
+padding: 1.5rem 0rem;
+}
+.list__item--link{
+  font-size: 2.5rem;
+  color: black;
+  width: 100%;
+}
 .link{
   width: 29.1rem;
   height: 4.421rem;
@@ -193,7 +205,10 @@ p {
   border: .3rem #000000 solid;
   color: #000000;
 }
-
+.link--purple{
+  color: black;
+  background-color: #D2C8E1;
+}
 .boeken{
   display: flex;
   flex-flow: column;
@@ -450,7 +465,7 @@ p {
 .product__detail--prijs{
   font-size: 3.6rem;
   font-family: "Swiss721BT-BoldCondensed";
-  margin-right: 1.8rem;
+  margin:0 1.8rem 1.8rem 0;
   color: #E2001A;
 }
 .ster__euros{
@@ -846,7 +861,7 @@ input:checked{
   margin-left: .85rem;
   display: flex;
   flex-flow: column;
-  justify-content: space-between;
+  justify-content: center;
 }
 .winkelmand__product--inputs{
   margin-top: 1.639rem;
@@ -916,6 +931,7 @@ input:checked{
   grid-area: bestellen;
   padding: unset;
   border: unset;
+  background-color: white;
 }
 .winkelmand__betaling--linken{
   display: flex;
@@ -1042,7 +1058,8 @@ input:checked{
 }
 .remove{
   border: unset;
-  background-color: whitebackground-color;
+  background-color: white;
+  margin-left: 5rem;
 }
 
 
@@ -1428,7 +1445,15 @@ input:checked{
 .winkelmand__products{
     width: 77.44rem;
     margin: auto;
+    flex-flow: row;
 
+}
+.winkelmand__booking--product{
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: column;
+  align-items: center;
+  width: 100%;
 }
 .winkelmand__product{
     display: flex;
@@ -1439,9 +1464,12 @@ input:checked{
 }
 .winkelmand__product--label{
     margin-right: 8.1rem;
+    display: flex;
+    align-items: center;
 }
 .product--info__flex{
   margin-left: 3.3rem;
+  justify-content: space-between;
 }
 .winkelmand__product--title{
     font-size: 2.4rem;

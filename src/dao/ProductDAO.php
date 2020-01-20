@@ -6,7 +6,7 @@ class ProductDAO extends DAO {
 
   public function selectAllBooks(){
     $sql = "SELECT * FROM `int3_products` WHERE `id` BETWEEN 2 AND 11
-    ORDER BY `name` ASC";
+    ORDER BY `id` ASC";
     $stmt = $this->pdo->prepare($sql);
     $stmt->execute();
     return $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -14,7 +14,7 @@ class ProductDAO extends DAO {
 
   public function selectAllHumoProducts(){
     $sql = "SELECT * FROM `int3_products` WHERE `id` BETWEEN 12 AND 14
-    ORDER BY `name` ASC";
+    ORDER BY `id` ASC";
     $stmt = $this->pdo->prepare($sql);
     $stmt->execute();
     return $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -22,7 +22,7 @@ class ProductDAO extends DAO {
 
   public function selectAllProducts(){
     $sql = "SELECT * FROM `int3_products` WHERE `id` BETWEEN 15 AND 18
-    ORDER BY `name` ASC";
+    ORDER BY `id` ASC";
     $stmt = $this->pdo->prepare($sql);
     $stmt->execute();
     return $stmt->fetchAll(PDO::FETCH_ASSOC);
