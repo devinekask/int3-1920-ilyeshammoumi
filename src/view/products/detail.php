@@ -107,13 +107,21 @@
                 <?php endif ?>
             </div>
             <form method="post" action="index.php?page=cart">
-                <?php if($product['id'] > 12) : ?>
+              <?php if($product['book'] === 1) : ?>
+                <div class="product__versies--aantal">
+                    <span>Versie :</span>
+                    <label for="versie" class="product__versie">
+                        <input  type="radio" value="Fysiek" name="versie" class="product__versie--input">Fysiek
+                        <input type="radio" value="E-book" name="versie" class="product__versie--rechts">E-book
+                    </label>
+                </div>
+                <?php elseif($product['id'] === 15) : ?>
                     <div class="product__versies--aantal">
                     <span>Versie :</span>
                     <label for="versie" class="product__versie">
                         <input  type="radio" value="rood" name="versie" class="product__versie--input">rood
                         <input type="radio" value="blauw" name="versie" class="product__versie--rechts">blauw
-                        <input type="radio" value="geel" name="versie" class="product__versie--rechts">geel
+                        <input type="radio" value="groen" name="versie" class="product__versie--rechts">groen
                     </label>
                 </div>
                 <?php endif ?>
@@ -125,7 +133,7 @@
                   </label>
                     </div>
                   <input type="hidden" name="id" value="<?php echo $product['id'];?>" />
-                  <button class="product__submit" type="submit" name="action" value="add">Add to cart</button>
+                  <button class="product__submit" type="submit" name="action" value="add">Toevoegen aan winkelmand</button>
                   </div>
                 </form>
 

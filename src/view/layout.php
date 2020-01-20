@@ -9,11 +9,13 @@
   </head>
   <body>
       <nav class="navigation">
-        <ul class="navigation__list navigation__mobile">
+      <div class="navigation__mobile">
+      <input class="menu-btn" type="checkbox" id="menu-btn" />
+      <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="navigation__list menu">
           <li class="navigation__list--item"><a href="index.php?" class="list__item--link">HOME</a></li>
           <li class="navigation__list--item link--yellow"><a href="" class="list__item--link link--yellow">HUMO@FESTIVALS</a></li>
           <li class="navigation__list--item"><a href="" class="list__item--link">HUMOR</a></li>
-          <li class="navigation__list--item"><a href="" class="list__item--link">VIDEO</a></li>
           <li class="navigation__list--item link--red"><a href="" class="list__item--link link--red">VIDEO</a></li>
           <li class="navigation__list--item"><a href="" class="list__item--link">FOTOSPECIALS</a></li>
           <li class="navigation__list--item"><a href="" class="list__item--link">NU IN HUMO</a></li>
@@ -23,6 +25,50 @@
           <li class="navigation__list--item"><a href="" class="list__item--link">BOEKEN</a></li>
           <li class="navigation__list--item link--purple"><a href="" class="list__item--link link--purple">HUMO SAPIENS</a></li>
         </ul>
+        </div>
+
+        <div class="navigation__desktop">
+          <div class="desktop--subnav">
+            <div class="desktop__subnav--wrapper">
+            <ul class="subnav--list">
+              <li class="subnav--listitem"><a class="subnav--link" href="">video</a></li>
+              <li class="subnav--listitem"><a class="subnav--link" href="">Tv-gids</a></li>
+              <li class="subnav--listitem"><a class="subnav--link" href="">zoekertjes</a></li>
+              <li class="subnav--listitem"><a class="subnav--link" href="">abonnementen nemen</a></li>
+            </ul>
+            </div>
+            <div class="desktop__subnav--wrapper">
+            <ul class="subnav--list">
+              <li class="subnav--listitem"><a class="subnav--link" href="">Nu in humo</a></li>
+              <li class="subnav--listitem"><a class="subnav--link" href="">login</a></li>
+              <li class="subnav--listitem"><a class="subnav--link" href="">registreer</a></li>
+            </ul>
+            </div>
+          </div>
+          <div class="desktop__mainnav">
+            <ul class="mainnav--list">
+            <li class="mainnav--listitem"><a class="mainnav--link" href="index.php?">Home</a></li>
+            <li class="mainnav--listitem"><a class="mainnav--link" href="">Actua</a></li>
+            <li class="mainnav--listitem"><a class="mainnav--link" href="">Humor</a></li>
+            <li class="mainnav--listitem"><a class="mainnav--link" href="">Tv/film</a></li>
+            <li class="mainnav--listitem"><a class="mainnav--link mainnav--link--img" href=""><img src="./assets/fotos/humo_logo.png" width="230" height="230" alt="Humo logo"></a></li>
+            <li class="mainnav--listitem"><a class="mainnav--link" href="">Muziek</a></li>
+            <li class="mainnav--listitem"><a class="mainnav--link" href="">Boeken</a></li>
+            <li class="mainnav--listitem"><a class="mainnav--link" href="">Humor</a></li>
+            <li class="mainnav--listitem"><a class="mainnav--link mainnav--search" href=""></a></li>
+            <li class="mainnav--listitem"><a class="mainnav--link mainnav--winkelmand" href="index.php?page=cart"><img src="./assets/fotos/shopping_cart.png" alt="winkelmand" width="45" height="32.93"><?php
+                            if(empty($_SESSION['cart'])) {
+                            echo '0';
+                          } else {
+                            echo sizeof($_SESSION['cart']);
+                            if(sizeof($_SESSION['cart']) > 1) {
+
+                            }
+                          }
+                          ?></a></li>
+            </ul>
+          </div>
+        </div>
       </nav>
       <?php echo $content;?>
     <footer class="footer">

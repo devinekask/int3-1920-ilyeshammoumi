@@ -37,6 +37,74 @@ p {
 .hidden{
   display: none;
 }
+.menu{
+    overflow: hidden;
+    height: 0;
+}
+.menu-icon {
+  cursor: pointer;
+  padding: 2.8rem 2.8rem;
+  margin-left: 2rem;
+  user-select: none;
+}
+
+ .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: .2s ease-out;
+  width: 18px;
+}
+
+.menu-icon .navicon:before,
+.menu-icon .navicon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+ .menu-icon .navicon:before {
+  top: .5rem;
+}
+
+ .menu-icon .navicon:after {
+  top: -.5rem;
+}
+
+/* menu btn */
+
+.menu-btn {
+  display: none;
+}
+
+.menu-btn:checked ~ .menu {
+  max-height: 24rem;
+}
+
+.menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+ .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+ .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+.navigation__desktop{
+  display: none;
+}
 .header__home{
   background-color: #1E1A19; /* var(--black) */
   height: 21.5rem;
@@ -178,6 +246,7 @@ padding: 1.5rem 0rem;
   font-size: 2.5rem;
   color: black;
   width: 100%;
+  margin-left: 2rem;
 }
 .link{
   width: 29.1rem;
@@ -238,7 +307,7 @@ padding: 1.5rem 0rem;
 .section__title{
   font-size: 2.8rem;
   text-align: center;
-  margin-bottom: 2rem;
+
 }
 
 
@@ -686,6 +755,7 @@ input:checked{
   top: 0;
   left: 0;
   width: 100%;
+  margin-top: 4rem;
 }
 .abonnement__header--image{
   width: 17rem;
@@ -848,6 +918,10 @@ input:checked{
 .winkelmand__product{
   font-size: 1.8rem;
   margin-bottom: 5.934rem;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
 }
 .winkelmand__product--info{
   display: flex;
@@ -870,6 +944,7 @@ input:checked{
 }
 .winkelmand__product--aantal{
   font-family: "Swiss721BT-BoldCondensed";
+  width: 7rem;
 }
 .winkelmand__product--input{
   width: 4.012rem;
@@ -1060,6 +1135,9 @@ input:checked{
   border: unset;
   background-color: white;
   margin-left: 5rem;
+}
+.navigation__cart{
+  margin-bottom: 4rem;
 }
 
 
@@ -1449,15 +1527,14 @@ input:checked{
 
 }
 .winkelmand__booking--product{
-  display: flex;
-  justify-content: space-evenly;
-  flex-flow: column;
-  align-items: center;
+
   width: 100%;
 }
 .winkelmand__product{
     display: flex;
     align-items: center;
+    flex-flow: row;
+    justify-content: space-between;
 }
 .winkelmand__product--info{
     margin-right: 6rem;
@@ -1848,6 +1925,9 @@ input:checked{
   .winkelmand__webshop{
       margin-top: 5.2rem;
   }
+  .section__title{
+    margin-bottom: unset;
+  }
   .section__title--related > h2{
       text-align: left;
   }
@@ -1878,6 +1958,71 @@ input:checked{
   }
   .footer__tablet{
     width: 70%;
+  }
+  .winkelmand__booking--product{
+    width: 70%;
+    margin: auto;
+  }
+  .navigation__mobile{
+    display: none
+    ;
+  }
+  .navigation__desktop{
+    display: block;
+  }
+  .desktop--subnav{
+    display: flex;
+    justify-content: space-between;
+    padding: 0rem 2rem;
+  }
+  .subnav--list, .mainnav--list{
+    display: flex;
+  }
+  .subnav--link{
+    font-family : 'Roboto';
+    font-weight: lighter;
+    text-transform: uppercase;
+    color: black;
+    width: 14rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .subnav--link:hover{
+    background-color: var(--red);
+    color: white;
+  }
+  .mainnav--link{
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    width: 9.3rem;
+    height: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--grey);
+    color: black;
+    padding: 2rem;
+  }
+  .mainnav--link:hover{
+    background-color: white;
+    color: var(--red);
+  }
+  .mainnav--link--img{
+    width: 23rem;
+  }
+  .desktop__mainnav{
+   display: flex;
+    justify-content: center;
+    background-color: var(--grey);
+  }
+  .mainnav--search::before{
+    content: "\26b2";
+  }
+  .abonnement__header{
+    margin-top: 12rem;
   }
 }
 

@@ -62,7 +62,7 @@
     <div class="winkelmand__links--wrapper">
     <section class="winkelmand__links">
 
-        <h2 class="winkelmand__totaal"> Totaal : <?php echo money_format("%i", $itemTotal);?></h2>
+        <h2 class="winkelmand__totaal"> Totaal : <?php echo money_format("%i", $total);?></h2>
         <a href="index.php?" class="link link--white winkelmand__webshop">Terug naar webshop</a>
         <div class="winkelmand__kortingscode">
             <p class="winkelmand__kortingscode--titel">Kortingscode toevoegen </p>
