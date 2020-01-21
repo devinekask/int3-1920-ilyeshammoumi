@@ -43,7 +43,6 @@ p {
 }
 .menu-icon {
   cursor: pointer;
-  padding: 2.8rem 2.8rem;
   margin-left: 2rem;
   user-select: none;
 }
@@ -51,10 +50,11 @@ p {
  .menu-icon .navicon {
   background: #333;
   display: block;
-  height: 2px;
+  height: .3rem;
   position: relative;
   transition: .2s ease-out;
-  width: 18px;
+  width: 1.8rem;
+  margin-left: 2rem;
 }
 
 .menu-icon .navicon:before,
@@ -67,7 +67,20 @@ p {
   transition: all .2s ease-out;
   width: 100%;
 }
+.navigation__mobile{
+}
 
+.navigation__list{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 99vw;
+}
+
+.shoppingcart__number--mobile{
+  font-size: 1.6rem;
+
+}
  .menu-icon .navicon:before {
   top: .5rem;
 }
@@ -236,11 +249,8 @@ p {
   text-align: center;
 }
 .navigation__list--item{
-  width: 100%;
-  display: block;
-}
-.navigation__list--item{
-padding: 1.5rem 0rem;
+
+  display: flex;
 }
 .list__item--link{
   font-size: 2.5rem;
@@ -679,11 +689,13 @@ input:checked{
   height: 4.9rem;
   border: solid black .3rem;
   margin-top: .6rem;
+  padding-left: 1rem;
 }
 .form__textarea{
   border: .3rem solid black;
   height: 10.7rem;
   margin-top: .6rem;
+  padding: 1rem;
 }
 .form__submit{
   margin: auto;
@@ -1044,7 +1056,7 @@ input:checked{
   font-size: 1.8rem;
   width: 30rem;
   margin-top: 4rem;
-  background-image: url(/src/assets/fotos/bol.svg);
+  background-image: url(./assets/fotos/bol.svg);
   background-repeat: repeat-x;
   background-position-y: bottom;
 }
@@ -1109,6 +1121,7 @@ input:checked{
   display: flex;
   flex-flow: column;
   align-items: center;
+  text-align: center;
 }
 .gegevens__prijzen--sub{
   font-size: 1.6rem;

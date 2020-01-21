@@ -28,7 +28,11 @@ $routes = array(
   'checkout' => array(
     'controller' => 'Orders',
     'action' => 'checkout'
-  )
+  ),
+  'pay' => array(
+    'controller' => 'Orders',
+    'action' => 'pay'
+  ),
 );
 
 if(empty($_GET['page'])) {

@@ -47,7 +47,7 @@ class ReviewDAO extends DAO {
     if (empty($data['naam'])) {
       $errors['naam'] = 'Gelieve uw voornaam in te geven';
     }
-    if (empty($data['opmerkingen'])) {
+    if (empty($data['opmerking'])) {
         $errors['review'] = 'Gelieve uw mening te geven';
     }
 

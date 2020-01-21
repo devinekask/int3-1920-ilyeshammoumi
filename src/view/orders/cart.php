@@ -30,7 +30,8 @@
             $total += $itemTotal;
 
           ?>
-          <div class="winkelmand__product">
+
+            <div class="winkelmand__product">
                 <div class="winkelmand__product--info">
                    <a href="index.php?page=detail&amp;id=<?php  echo $item['product']['id'];?>">
                      <img class='winkelmand__product--image' src="<?php  echo $item['product']['picture1'];?>"  alt="<?php echo $item['product']['name'];?>" />
@@ -51,8 +52,6 @@
             <button type="submit" class="remove" name="remove" value="<?php echo $item['product']['id'];?>"><img src="../assets/fotos/cross.svg" alt="kruis"></button>
             </div>
             </div>
-
-
           <?php
           }
           ?>
@@ -72,7 +71,7 @@
             </label>
         </div>
         <button type="submit" id="update-cart" class="link link--black winkelmand__update " name="action" value="update">Update Cart</button>
-        <button class="winkelmand__bestellen--subtmit" type="submit" id="checkout" name="action"  value="checkout"><a href="winkelmand-gegevens.html" class="link link--red winkelmand__bestellen ">Verder met bestellen</a></button>
+        <button class="winkelmand__bestellen--subtmit" type="submit" id="checkout" name="action"  value="checkout"><a href="index.php?page=checkout" class="link link--red winkelmand__bestellen ">Verder met bestellen</a></button>
     </section>
 </div>
 <section class="related winkelmand__related">

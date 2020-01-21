@@ -29,32 +29,16 @@
     </section>
     <section class="abonnement__prijzen">
         <form action="index.php?page=cart" method="post" class="abonnement__form">
+          <?php foreach($products as $product) :?>
             <label for="prijs">
                 <div class="abonnement__prijs">
-                    <input type="radio" value="<?php echo $product['abo_maand1'] ?>" name="prijs">
-                    <p class="abonnement__prijs--maanden"><?php echo $product['abo_maand1'] ?> </p>
-                    <p class="abonnement__prijs--aantal" >€<?php echo $product['abo_prijs1'] ?>/mnd</p>
+                    <input type="radio" value="<?php echo $product['name'] ?>" name="prijs">
+                    <p class="abonnement__prijs--maanden"><?php echo $product['name'] ?> </p>
+                    <p class="abonnement__prijs--aantal" >€<?php echo $product['price'] ?>/mnd</p>
                 </div>
+            </label>
+            <?php endforeach ; ?>
 
-            </label>
-            <label for="prijs">
-                <div class="abonnement__prijs">
-                    <input type="radio" value="<?php echo $product['abo_maand2'] ?> " name="prijs">
-                    <p class="abonnement__prijs--maanden"><?php echo $product['abo_maand2'] ?> </p>
-                    <p class="abonnement__prijs--aantal" >€<?php echo $product['abo_prijs2'] ?>/mnd</p>
-                    <p class="abonnement__prijs--besparing">U bespaart 39€</p>
-                    <p class="abonnement__prijs--korting">10% korting</p>
-                </div>
-            </label>
-            <label for="prijs">
-                <div class="abonnement__prijs">
-                    <input type="radio" value="<?php echo $product['abo_maand3'] ?>" name="prijs">
-                    <p class="abonnement__prijs--maanden"><?php echo $product['abo_maand3'] ?></p>
-                    <p class="abonnement__prijs--aantal" >€<?php echo $product['abo_prijs3'] ?>/mnd</p>
-                    <p class="abonnement__prijs--besparing">U bespaart 118€</p>
-                    <p class="abonnement__prijs--korting">20% korting</p>
-                </div>
-            </label>
             <input type="hidden" name="id" value="<?php echo $product['id'];?>" />
             <button class="link form__submit link--red form__submit--abonnement" type="submit" name="action" value="add">ABONNEREN</button>
         </form>
@@ -150,11 +134,11 @@
                     <p class="review__author ">Er zijn nog geen reviews voor deze product</p>
             </div>
             <?php else :?>
-            <?php session_destroy(); foreach($reviews as $review) : ?>
+            <?php  foreach($reviews as $review) : ?>
             <div class="review">
                 <div class="review--flex">
                     <p class="review__author"><?php echo $review['naam']?></p>
-                    <p class="review__score"><?php echo $review['score']?></p>
+                    <p class="review__score"><?php echo $review['score']?> / 5</p>
                 </div>
                 <p class="review__text"><?php echo $review['opmerking']?></p>
             </div>
@@ -172,31 +156,31 @@
                 <span>Score :</span>
                 <div class="form__circles">
                     <div class="form__circle">
-                    1<input type="radio" value="1<?php if(!empty($_POST['score'])){ echo $_POST['score'];} ?>" name="score" id=score>
+                    1<input type="radio" value="1<?php if(!empty($_POST['score'])){ echo $_POST['score'];} ?>" name="score" id=1>
                     </div>
                     <div class="form__circle">
-                    2<input type="radio" value="2<?php if(!empty($_POST['score'])){ echo $_POST['score'];} ?>" name="score" id=score>
+                    2<input type="radio" value="2<?php if(!empty($_POST['score'])){ echo $_POST['score'];} ?>" name="score" id=2>
                     </div>
                     <div class="form__circle">
-                    3<input type="radio" value="3<?php if(!empty($_POST['score'])){ echo $_POST['score'];} ?>" name="score" id=score>
+                    3<input type="radio" value="3<?php if(!empty($_POST['score'])){ echo $_POST['score'];} ?>" name="score" id=3>
                     </div>
                     <div class="form__circle">
-                    4<input type="radio" value="4<?php if(!empty($_POST['score'])){ echo $_POST['score'];} ?>" name="score" id=score>
+                    4<input type="radio" value="4<?php if(!empty($_POST['score'])){ echo $_POST['score'];} ?>" name="score" id=4>
                     </div>
                     <div class="form__circle">
-                    5<input type="radio" value="5<?php if(!empty($_POST['score'])){ echo $_POST['score'];} ?>" name="score" id=score>
+                    5<input type="radio" value="5<?php if(!empty($_POST['score'])){ echo $_POST['score'];} ?>" name="score" id=5>
                     </div>
                     <span class="error"><?php if(!empty($errors)  && isset($errors['score'])){ echo $errors['score'];} ?></span>
                 </div>
                </label>
                <label for="naam" class="review__form--name">
                    <span>Volledige naam :</span>
-                   <input type="text" id="naam" value="<?php if(!empty($_POST['naam'])){ echo $_POST['naam'];} ?>" required>
+                   <input type="text" name="naam" id="naam" value="<?php if(!empty($_POST['naam'])){ echo $_POST['naam'];} ?>" required>
                </label>
-               <label for="opmerkingen" class="review__form--name">
+               <label for="opmerking" class="review__form--name">
                     <span>Opmerkingen :</span>
-                    <textarea name="opmerkingen" id="opmerkingen" class="form__textarea"  value="<?php if(!empty($_POST['opmerking'])){ echo $_POST['opmerking'];} ?>" required></textarea>
-                    <span class="error"><?php if(!empty($errors)  && isset($errors['review'])){ echo $errors['review'];} ?></span>
+                    <textarea name="opmerking" id="opmerking" class="form__textarea"  value="<?php if(!empty($_POST['opmerking'])){ echo $_POST['opmerking'];} ?>"></textarea>
+                    <span class="error"><?php if(!empty($errors)  && isset($errors['opmerking'])){ echo $errors['opmerking'];} ?></span>
                 </label>
                 <input type="submit" value="Versturen" class="link form__submit link--red">
             </form>

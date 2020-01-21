@@ -10,8 +10,23 @@
   <body>
       <nav class="navigation">
       <div class="navigation__mobile">
-      <input class="menu-btn" type="checkbox" id="menu-btn" />
+
+        <ul class="navigation__list">
+
       <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <li class="navigation__list--item"><a href="index.php?" class="list__item--link"><img src="./assets/fotos/humo_logo.png" width="90" height="90" alt="Humo logo"></a></a></li>
+        <li class="navigation__list--item"><a class="list__item--link shoppingcart__number--mobile" href="index.php?page=cart"><img src="./assets/fotos/shopping_cart.png" alt="winkelmand" width="45" height="32.93"><?php
+                            if(empty($_SESSION['cart'])) {
+                            echo '0';
+                          } else {
+                            echo sizeof($_SESSION['cart']);
+                            if(sizeof($_SESSION['cart']) > 1) {
+
+                            }
+                          }
+                          ?></a></li>
+        </ul>
         <ul class="navigation__list menu">
           <li class="navigation__list--item"><a href="index.php?" class="list__item--link">HOME</a></li>
           <li class="navigation__list--item link--yellow"><a href="" class="list__item--link link--yellow">HUMO@FESTIVALS</a></li>
@@ -25,6 +40,7 @@
           <li class="navigation__list--item"><a href="" class="list__item--link">BOEKEN</a></li>
           <li class="navigation__list--item link--purple"><a href="" class="list__item--link link--purple">HUMO SAPIENS</a></li>
         </ul>
+
         </div>
 
         <div class="navigation__desktop">

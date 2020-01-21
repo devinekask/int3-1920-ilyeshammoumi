@@ -3,20 +3,35 @@
 require_once __DIR__ . '/Controller.php';
 require_once __DIR__ . '/../dao/ProductDAO.php';
 require_once __DIR__ . '/../dao/ReviewDAO.php';
-
+require_once __DIR__ . '/../dao/DataDAO.php';
 
 class OrdersController extends Controller {
 
-  private $ProductDAO;
+  private $productDAO;
+  private $dataDAO;
 
   function __construct() {
     $this->productDAO = new ProductDAO();
+    $this->dataDAO = new DataDAO();
   }
 
   public function checkout() {
+    if(!empty($_POST['action'])){
+      if($_POST['action'] == 'insertForm'){
+       $insertedForm = $this->dataDAO->insertForm($_POST);
+       if(empty($insertedForm)){
+         $errors = $this->dataDAO->validate($_POST);
+         $this->set('errors', $errors);
+       }
+       if(!empty($insertedForm)){
+         header('Location: index.php?page=pay');
+         exit();
+       }
 
-    $this->set('title','Checkout');
-    $this->set('currentpage', 'checkout');
+     }
+    }
+
+
   }
 
   public function cart() {
@@ -52,6 +67,11 @@ class OrdersController extends Controller {
   }
 
   private function _handleAdd() {
+    //splitsen in php
+    
+
+
+
     if (empty($_SESSION['cart'][$_POST['id']])) {
       $product = $this->productDAO->selectProductById($_POST['id']);
       if (empty($product)) {

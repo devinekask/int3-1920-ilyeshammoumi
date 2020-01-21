@@ -40,7 +40,7 @@ class ProductsController extends Controller {
       if($_POST['action'] == 'insertReview'){
         $lastInsertedQuote = $this->reviewDAO->insertReview($_POST);
         $data = array(
-          'score' => (int)$_POST['score'],
+          'score' => $_POST['score'],
           'naam' => $_POST['naam'],
           'opmerking' => $_POST['opmerking'],
           'product_id' => $_POST['product_id'] );
@@ -54,6 +54,9 @@ class ProductsController extends Controller {
         }
       }
     }
+    $products = $this->productDAO->selectAllSubscriptions();
+
+    $this->set('products', $products);
     $this->set('product',$product);
     $this->set('reviews', $this->reviewDAO->selectReviewsByProducts($_GET['id']));
     $this->set('title','Details');

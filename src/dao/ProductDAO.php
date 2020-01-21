@@ -28,6 +28,13 @@ class ProductDAO extends DAO {
     return $stmt->fetchAll(PDO::FETCH_ASSOC);
   }
 
+  public function selectAllSubscriptions(){
+    $sql = "SELECT * FROM `int3_products` WHERE `id` BETWEEN 19 AND 21
+    ORDER BY `id` ASC";
+    $stmt = $this->pdo->prepare($sql);
+    $stmt->execute();
+    return $stmt->fetchAll(PDO::FETCH_ASSOC);
+  }
 
   public function selectProductById($id){
     $sql = "SELECT * FROM `int3_products` WHERE `id` = :id";
