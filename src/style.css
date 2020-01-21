@@ -1,11 +1,11 @@
 @import './css/reset.css';
 
 :root {
-  --red: #E2001A;
-  --black: #1E1A19;
-  --grey: #F7F7F3;
-  --yellow: #F8D936;
-  --primary-font : 'Swiss721BT-BoldCondensed';
+  --red: #e2001a;
+  --black: #1e1a19;
+  --grey: #f7f7f3;
+  --yellow: #f8d936;
+  --primary-font: 'Swiss721BT-BoldCondensed';
 
 }
 
@@ -756,6 +756,7 @@ input:checked{
   font-family: "Swiss721BT-BoldCondensed";
   text-align: center;
   padding: 1.5rem 0;
+  color: var(--black);
 }
 .yellow__bg{
   background-color: #F8D936;
@@ -2039,7 +2040,7 @@ input:checked{
   .abonnement__header{
     margin-top: 12rem;
   }
-  .header__link, .link, .boeken__cover--home, .product__image--home{
+  .header__link, .link, .boeken__cover--home, .product__image--home, .related__product--image{
     transition: 0.3s ease;
   }
 
@@ -2062,6 +2063,10 @@ input:checked{
   .abonnement__link:hover{
     width: 32rem;
     height:7rem;
+  }
+  .related__product--image:hover{
+    width: 21rem;
+    height:32rem;
   }
 
 }

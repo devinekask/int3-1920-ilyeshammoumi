@@ -200,18 +200,18 @@
                 <image class="pijl white--fill" src="../assets/fotos/pijl.svg" width="24.86" height="19.89"/>
             </div>
             <div class="related--flex">
-            <div class="related__product">
-                <img src="../assets/books/wool/Wool_Cover.jpg" alt="Wool" class="related__product--image">
+            <a href="index.php?page=detail&id=11" class="related__product">
+                <img src="./assets/books/wool/Wool_Cover.jpg" alt="Wool" class="related__product--image">
                 <p class="related__product--title">Wool</p>
-            </div>
-            <div class="related__product">
-                <img src="../assets/books/wool/Wool_Cover.jpg" alt="Wool" class="related__product--image">
-                <p class="related__product--title">Wool</p>
-            </div>
-            <div class="related__product">
-                <img src="../assets/books/wool/Wool_Cover.jpg" alt="Wool" class="related__product--image">
-                <p class="related__product--title">Wool</p>
-            </div>
+            </a>
+            <a href="index.php?page=detail&id=13" class="related__product">
+                <img src="./assets/products/bladwijzer/bladwijzer_cover.jpg" alt="Humo Bladwijzer" class="related__product--image">
+                <p class="related__product--title">Humo Bladwijzer</p>
+            </a>
+            <a href="index.php?page=detail&id=17" class="related__product">
+                <img src="./assets/products/leeslamp_retro/leeslamp_retro_cover.jpg" alt="Leeslichtje retro" class="related__product--image">
+                <p class="related__product--title">Leeslichtje retro</p>
+            </a>
         </div>
         </section>
         <?php endif ; ?>
