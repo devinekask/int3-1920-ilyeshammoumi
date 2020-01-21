@@ -20,7 +20,8 @@
     </section>
 
     <section class="winkelmand__gegevens">
-        <form action="index.php?page=checkout" method="post" class="gegevens__formulier">
+        <form action="index.php?page=checkout" method="post" >
+          <div class="gegevens__formulier">
             <input type="hidden" name="action" value="insertForm">
             <label for="aanhef" class="gegevens__form--radiofield gegevens__form--aanhef">
 
@@ -104,25 +105,28 @@
                 </div>
             </div>
             </label>
+            </div>
 
-            <input type="submit" value="Verder met betaling" action="formsubmit" class="link link--red">
-        </form>
-    </section>
-    <?php
+    <section class="gegevens__prijzen">
+        <div class="gegevens__prijzen--wrapper">
+        <?php
           $total = 0;
           foreach($_SESSION['cart'] as $item) {
             $itemTotal = $item['product']['price'] * $item['quantity'];
             $total += $itemTotal;
-
+          }
       ?>
-    <section class="gegevens__prijzen">
-        <div class="gegevens__prijzen--wrapper">
+
         <p class="gegevens__prijzen--sub prijzen__sub--prijs">Totaal : <?php echo money_format("%i", $total);?></p>
+
         <p class="gegevens__prijzen--sub  prijzen__sub--korting">Korting : Geen</p>
         <h2 class="gegevens__prijzen--totaal">Totaalprijs: <?php echo money_format("%i", $total);?></h2>
         <input type="submit" value="Verder met betaling" action="formsubmit" class="link link--red">
     </div>
         <a href="index.php?page=cart" class="link link--white">Terug naar de webshop</a>
     </section>
+        </form>
+    </section>
 
-<?php  } ?>
+
+

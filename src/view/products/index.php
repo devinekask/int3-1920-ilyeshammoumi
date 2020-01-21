@@ -62,7 +62,7 @@
         <?php foreach($books as $book) : ?>
 
             <a href="index.php?page=detail&id=<?php echo $book['id']; ?>">
-            <img src="<?php echo $book['picture3']; ?>" alt="<?php echo $book['name']; ?>" class="boeken__cover" width="123.53" height="175.37">
+            <img src="<?php echo $book['picture3']; ?>" alt="<?php echo $book['name']; ?>" class="boeken__cover boeken__cover--home" width="123.53" height="175.37">
              </a>
           <?php endforeach ;?>
         </div>
@@ -76,7 +76,7 @@
           <?php foreach($humoProducts as $humoProduct) : ?>
             <div class="gadgets__product">
                 <a href="index.php?page=detail&id=<?php echo $humoProduct['id']; ?>">
-                <img src="<?php echo $humoProduct['picture1']; ?>" alt="<?php echo $humoProduct['name']; ?>" class="product__image" width="123.53" height="175.37">
+                <img src="<?php echo $humoProduct['picture1']; ?>" alt="<?php echo $humoProduct['name']; ?>" class="product__image product__image--home" width="123.53" height="175.37">
                 </a>
                 <p class="product__title">
                 <?php echo $humoProduct['name']; ?>
@@ -92,7 +92,7 @@
         <?php foreach($products as $product) : ?>
             <div class="gadgets__product">
               <a href="index.php?page=detail&id=<?php echo $product['id']; ?>">
-                <img src="<?php echo $product['picture1']; ?>" alt="<?php echo $product['name']; ?>" class="product__image" width="123.53" height="175.37">
+                <img src="<?php echo $product['picture1']; ?>" alt="<?php echo $product['name']; ?>" class="product__image product__image--home" width="123.53" height="175.37">
                 </a>
                 <p class="product__title">
                 <?php echo $product['name']; ?>
