@@ -61,6 +61,8 @@ class ProductsController extends Controller {
     $this->set('reviews', $this->reviewDAO->selectReviewsByProducts($_GET['id']));
     $this->set('title','Details');
   }
-
+  public function longread(){
+    $this->set('title', 'Longread');
+  }
 
 }

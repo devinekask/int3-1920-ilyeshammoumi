@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Cormorant+Infant|Delius+Unicase|Oswald|Pacifico|Rosarivo&display=swap" rel="stylesheet">
     <title>Humo - webshop</title>
      <?php echo $css;?>
   </head>
@@ -67,7 +68,7 @@
             <li class="mainnav--listitem"><a class="mainnav--link" href="">Actua</a></li>
             <li class="mainnav--listitem"><a class="mainnav--link" href="">Humor</a></li>
             <li class="mainnav--listitem"><a class="mainnav--link" href="">Tv/film</a></li>
-            <li class="mainnav--listitem"><a class="mainnav--link mainnav--link--img" href=""><img src="./assets/fotos/humo_logo.png" width="230" height="230" alt="Humo logo"></a></li>
+            <li class="mainnav--listitem"><a class="mainnav--link mainnav--link--img" href="index.php?"><img src="./assets/fotos/humo_logo.png" width="230" height="230" alt="Humo logo"></a></li>
             <li class="mainnav--listitem"><a class="mainnav--link" href="">Muziek</a></li>
             <li class="mainnav--listitem"><a class="mainnav--link" href="">Boeken</a></li>
             <li class="mainnav--listitem"><a class="mainnav--link" href="">Humor</a></li>

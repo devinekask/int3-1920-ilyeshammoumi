@@ -15,6 +15,7 @@ html {
   font-family: 'roboto';
   font-weight: normal;
 }
+
 h1,h2,h3{
   font-family: 'Swiss721BT-BoldCondensed';  /* var(--primary-font */
 
@@ -1154,6 +1155,88 @@ input:checked{
   margin-bottom: 4rem;
 }
 
+/* CSS van de longread */
+.oswald__font{
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.2rem;
+  line-height: 3rem;
+
+}
+.pacifico__font{
+  font-family: 'Pacifico', cursive;
+}
+.delius__font{
+  font-family: 'Delius Unicase', cursive;
+}
+.lr--intro{
+  flex-flow: column;
+  display: flex;
+  align-items: center;
+}
+.lr--intro__linkbg{
+  width: 20.78rem;
+  height: 5.33rem;
+  background-color: #999999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4rem;
+  transition: 0.3s ease;
+
+}
+.lr--itro__link{
+  font-weight: bold;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  color: white;
+
+}
+.lr--intro__linkbg:hover{
+  background-color: #6C76D8;
+}
+.scene_1--wrapper{
+  background-image: url(./assets/longread/scene_1/scene-1_bg.png);
+  width: 100%;
+  height: 76.51rem;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+.scene_1--text{
+  width: 33.13rem;
+}
+.scene-1__katy{
+  font-size: 3rem;
+  color: #6C76D8;
+}
+.scene-1__katy,.scene-luke, .scene-june{
+  margin: 0rem .5rem;
+}
+.scene-luke, .scene-june, .scene1-alinea2{
+  font-size: 1.8rem;
+
+}
+.scene-luke{
+  color: #9C4138;
+  font-weight: bold;
+
+}
+.scene-june, .scene1-alinea2{
+  color: #DD8BB5;
+}
+.scene1-alinea1{
+  margin-top: 8.71rem;
+  margin-bottom: 3.3rem;
+}
+.scene_1-ouders{
+  background-image: url(../src/assets/longread/scene_1/ouders.png);
+  width: 100%;
+  height: 29.52rem;
+  background-position: center ;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: 6rem;
+}
 
 
 @media only screen and (min-width: 835px){

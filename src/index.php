@@ -20,6 +20,10 @@ $routes = array(
     'controller' => 'Products',
     'action' => 'detail'
   ),
+  'longread' => array(
+    'controller' => 'Products',
+    'action' => 'longread'
+  ),
   'cart' => array(
     'controller' => 'Orders',
     'action' => 'cart'

@@ -3,7 +3,7 @@
         <div class="header__home--wrapper">
         <h1 class="header__title">Boek van de week :</h1>
         <h2 class="header__subtitle">The Handmaid's Tale</h2>
-        <a  class="header__link" href="">Ontdekken</a>
+        <a  class="header__link" href="index.php?page=longread">Ontdekken</a>
         </div>
       </header>
 
