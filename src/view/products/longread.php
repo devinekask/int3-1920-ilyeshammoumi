@@ -56,6 +56,7 @@
 </section>
 <img src="./assets/longread/scene_2/gras.png" alt="gras" class="lr--scene2__gras">
 <section class="lr--scene_3">
+<h2 class="hidden">Het probleem</h2>
   <div class="lr--scene_3--texts">
   <p class="scene_3--text oswald__font scene_3--text__left">
       Mama wordt als maar verdrietiger en zieker, papa als maar radelozer. En zij niet alleen want ook mijn vriendjes en vriendinnetjes horen hun mama en papa <span class="rosarivo__font scene_3--alinea1__keyword">RUZIE MAKEN EN SAMEN HUILEN</span> . Ik begrijp het allemaal niet zo goed. Papa leest mij een briefje voor dat ze die dag in de brievenbus hebben gekregen.
@@ -80,6 +81,7 @@
 </div>
 </section>
 <section class="lr--scene_4">
+<h2 class="hidden">Die dag</h2>
   <div class="lr--scene_4--texts">
     <p class="scene_4--text oswald__font">
    <span class="rosarivo__font scene_4--keyword1">Mijn oma’tje is overleden want ze was ook heel erg ziek geworden...</span> <br>
@@ -91,6 +93,7 @@ Ik ben boos en verdrietig. Christelijke mensen willen ons land redden en gaan nu
   </div>
 </section>
 <section class="lr--scene_5">
+<h2 class="hidden">Ons gezin nu ?</h2>
   <div class="lr--scene_5--wrapper">
     <div class="lr--scene_5__charachter scene_5__luke">
       <img src="./assets/longread/scene_5/luke_dark.jpg"  class="scene_5__charachter--bottom" alt="luke dark" width=100% class>
@@ -127,6 +130,7 @@ Ik ben boos en verdrietig. Christelijke mensen willen ons land redden en gaan nu
     </div>
 </section>
 <section class="lr--scene_6">
+<h2 class="hidden">Het begin van het einde</h2>
   <div class="lr--scene_6-images">
       <img src="./assets/longread/scene_6/june.png" alt="June" class="scene_6--june" width="197" height="402">
       <img src="./assets/longread/scene_6/front.png" alt="front" class="scene_6--front" width="644" height=470>
