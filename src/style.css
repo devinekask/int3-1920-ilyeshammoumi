@@ -1168,6 +1168,9 @@ input:checked{
 .delius__font{
   font-family: 'Delius Unicase', cursive;
 }
+.rosarivo__font{
+  font-family: 'Rosarivo', serif;
+}
 .lr--intro{
   flex-flow: column;
   display: flex;
@@ -1225,8 +1228,7 @@ input:checked{
   color: #DD8BB5;
 }
 .scene1-alinea1{
-  margin-top: 8.71rem;
-  margin-bottom: 3.3rem;
+  margin: 8.71rem 0 3.3rem 0 ;
 }
 .scene_1-ouders{
   background-image: url(../src/assets/longread/scene_1/ouders.png);
@@ -1236,9 +1238,291 @@ input:checked{
   background-size: contain;
   background-repeat: no-repeat;
   margin-top: 6rem;
+  display: flex;
+  justify-content: center;
+}
+.lr--scene_2{
+  overflow-y: hidden;
+}
+.lr--scene_2--images{
+  background-image: url(../src/assets/longread/scene_2/Scene_2-4.jpg);
+  height: 34.2rem;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+
+}
+.scene_2--june, .scene_2--katy__bike, .scene_2--swipe, .scene_2--luke{
+  position: absolute;
+}
+.scene_2--june{
+  bottom: 0;
+  left: 0;
+}
+.scene_2--katy__bike{
+  bottom: 1rem;
+  left: 8rem;
+  z-index: 1;
+}
+.scene_2--swipe{
+  bottom: 1rem;
+}
+.scene_2--luke{
+  bottom: 1rem;
+  right: 0;
+}
+.scene_2--mobile{
+  height: 45rem;
+  background-color: #DC9360;
+  transform: translateY(-1rem);
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+.scene_2--mobile__alinea1{
+  width: 33.37rem;
+  padding-top: 2rem;
+  color: white;
+  font-size: 1.2rem;
+
+}
+.scene_2--alinea1__keyword{
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  color: #AF2528;
+  margin: 0 .5rem;
+}
+.scene_2--alinea2__keyword{
+  font-size: 1.8rem;
+  color: #EACB8D;
+  margin: 0 .5rem;
+}
+.lr--scene2__clouts{
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  transform: translateY(-12rem);
+}
+.lr--scene2__gras{
+  position: absolute;
+  width: 100%;
+  transform: translateY(-7rem);
+}
+.scene_2--desktop{
+  display: none;
+}
+.lr--scene_3{
+  background-image: url(../src/assets/longread/scene_3/scene-3_bg.jpg);
+  background-position: center;
+  width: 100%;
+  height: 79.2rem;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+.lr--scene_3--texts{
+  padding-top: 4rem;
+}
+.scene_3--text{
+  color: white;
+  width: 33.16rem;
+  font-size: 1.2rem;
+  margin-bottom: 4rem;
+}
+.scene_3--alinea1__keyword{
+  color: black;
+  font-size: 1.8rem;
+  margin: 0 0.5rem;
+}
+.scene_3--alinea2__keyword{
+  color: #A820A2;
+  font-size: 1.8rem;
+  margin: 0 0.5rem;
+}
+.scene_3--images{
+  display: flex;
+  width: 37.5rem;
+}
+.scene_3__part--left{
+  width: 20rem;
+  height: 20.7rem;
+  display: flex;
+  transform: translatex(-5rem);
+}
+.baby--left{
+  transform: translatex(3rem);
+}
+.scene_3__part--centrum{
+  background-image: url(../src/assets/longread/scene_3/women--before.png);
+  background-size: cover;
+  height: 34.85rem;
+  width: 16.66rem;
+  z-index: 1;
+  transform: translatex(-11rem);
+}
+.scene3_3__part--right{
+  display: flex;
+  width: 11.35rem;
+  height: 19.6rem;
+  transform: translatex(-14rem);
+}
+.women--right{
+  transform: translateX(2rem);
+  margin-top: 2rem;
+}
+.lr--scene_4--texts{
+  width: 100%;
+  height: 31.6rem;
+  background-color: #BF1515;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.scene_4--text{
+  color: white;
+  width: 35.5rem;
+  font-size: 1.2rem;
+}
+.scene_4--keyword1{
+  font-size: 1.6rem;
+  color: black;
+}
+.scene_4--keyword2{
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  color: black;
+  margin: 0 0.5rem;
+  font-weight: bold;
+}
+.lr--scene_4--images{
+  background-image: url(../src/assets/longread/scene_4/scene-4__bg.jpg);
+  height: 28.6rem;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+}
+.scene_4--priester{
+  margin-right: 3.5rem;
+}
+.lr--scene_5__charachter{
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+
+}
+.scene_5__charachter--top, .scene_5__charachter--bottom{
+  max-width: 40rem;
+}
+.scene_5__charachter--top{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+}
+.june__light{
+  background-color: #8a9ef7;
+  width: 100%;
+
+}
+.button__bgi--yellow{
+  background-color: #fdd082;
+}
+.button__bgi--green{
+  background-color: #bed967;
+}
+.button__bgi--bleu{
+  background-color: #5b78f2;
 }
 
+.scene_5--button__bgi{
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  margin-top: 3rem;
+  width: 24.8rem;
+  height: 6.9rem;
+  display: flex;
+  justify-content: center;
+  border-radius: 12rem;
+}
+.scene_5--button{
+  font-size: 1.6rem;
+  text-transform: uppercase;
 
+}
+.scene_5__june{
+  background-color: black;
+  width: 100%;
+  height: 50rem;
+}
+.lr--scene_5--texts{
+  height: 34.1rem;
+  background-color: black;
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  font-size: 1.2rem;
+
+}
+.scene_5--keyword__red, .scene_5--keyword__darkred, .scene_5--keyword__yellow, .scene_5--keyword__pink{
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 0 0.5rem;
+}
+.scene_5--keyword__red{
+  color: #BF1515;
+}
+.scene_5--keyword__darkred{
+  color: #800E0E;
+}
+.scene_5--keyword__yellow{
+  color: #FFE1B2;
+}
+.scene_5--keyword__pink{
+  color: #DD8BB5;
+}
+.scene_5--text, .scene_6--texts{
+  margin: 1.2rem 0rem;
+}
+.scene_6--texts{
+  height: 43rem;
+}
+.lr--scene_6{
+  background-image: url(./assets/longread/scene_6/background.png);
+  background-position: center bottom;
+  background-size: cover;
+  height: 62.5rem;
+  z-index: 1;
+}
+.lr--scene_6-images{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+.lr--scene_6-images{
+  overflow: hidden;
+}
+.scene_6--june{
+  transform: translateY(4rem);
+}
+.scene_6--front{
+  transform: translateY(-35rem);
+}
+.scene_6--texts{
+  transform: translateY(-9rem);
+}
+.swipe--flex{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 @media only screen and (min-width: 835px){
 .header__home{
     height: 33.23rem;
@@ -1817,7 +2101,183 @@ input:checked{
 .footer__column > a:hover{
   text-decoration: underline;
 }
+.oswald__font{
+  font-size: 1.6rem;
+}
+.lr--intro__linkbg{
+  width: 26.9rem;
+  height: 6.9rem;
+}
+.lr--itro__link{
+  font-size: 3.6rem;
+}
+.scene_1--texts__wrapper{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  margin-top: 10rem;
+  position: absolute;
+}
+.scene1-alinea1{
+  margin: unset;
+}
+.scene_1--wrapper{
+ height: unset;
+}
+.scene_1-ouders{
+  height: 56.7rem;
+  margin-top: 30rem;
+}
+.scene_1-pijlen{
+  height: 50rem;
+}
+.scene_1--text{
+  width: 36.2rem;
+}
+.scene-1__katy{
+  font-size: 4.4rem;
+}
+.scene-luke, .scene-june, .scene1-alinea2 {
+  font-size: 2rem;
+}
+.lr--scene2__clouts{
+height: 64rem;
+transform: translateY(-35rem);
+}
+.lr--scene_2--images{
+  height: 73.2rem;
+}
+.scene_2--luke{
+  width: 18.3rem;
+  height: 28.5rem;
+  bottom: 7rem;
+}
+.scene_2--june{
+  width: 19.3rem;
+  height: 33.2rem;
+  bottom: 5.5rem;
+}
+.scene_2--katy__bike{
+  width: 14.5rem;
+  height: 20.4rem;
+  bottom: 5rem;
+  left: 18rem;
+}
+.scene_2--swipe{
+  bottom: 8rem;
+}
+.scene_2--mobile{
+  display: none;
+}
+.scene_2--desktop{
+  display: flex;
+  justify-content: space-evenly;
+  transform: translateY(10rem);
+}
+.scene_2--mobile__alinea1{
+  width: 37rem;
+}
+.scene_2--alinea1__keyword, .scene_2--alinea2__keyword{
+  font-size: 3rem;
+}
+.scene_2__alinea--rechts{
+  transform: translateY(6rem);
+}
+.lr--scene2__gras{
+  transform: translateY(-12rem);
+  z-index: 3;
+}
+.lr--scene_3--texts{
+  display: flex;
+  margin-top:4rem;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.scene_3--alinea1__keyword, .scene_3--alinea2__keyword{
+  font-size: 3rem;
+}
+.scene_3--text{
+width: 37.5rem;
+}
+.scene_3--images{
+  width: 100%;
+  justify-content: center;
+}
+.zwanger--centrum, .scene_3__part--centrum{
+  width: 22rem;
+  height: 46.8rem;
 
+
+}
+.women--right{
+  width: 10.7rem;
+  height: 28.1rem;
+  transform: translateX(4rem);
+  margin-top: 4rem;
+}
+.dokter--right{
+  width: 10.7rem;
+  height: 31rem;
+}
+.man--left{
+  width: 19.3rem;
+  height: 32.1rem;
+}
+.baby--left{
+  width: 13.6rem;
+  height: 32rem;
+  transform: translateX(6rem);
+}
+.scene_3__part--left{
+  width: unset;
+  height: unset;
+}
+.lr--scene_4--texts{
+  height: 45.1rem;
+}
+.scene_4--text{
+  width: 42.2rem;
+}
+.scene_4--keyword1{
+  font-size: 2rem;
+}
+.scene_4--keyword2{
+  font-size: 3rem;
+}
+.lr--scene_4--images{
+  height: 73.9rem;
+}
+.scene_4--priester{
+  width: 6.56rem;
+  height: 23.5rem;
+  margin: unset;
+  transform: translateX(-12rem);
+  margin-top: 10rem;
+}
+.lr--scene_5--wrapper{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.scene_5__june{
+  height: unset;
+  grid-column: 2;
+  grid-row: 1;
+}
+.scene_5__katy{
+  grid-column: 3;
+}
+.lr--scene_5--texts{
+  flex-flow: row;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  height: 28.7rem;
+}
+.scene_4--text{
+  width: 37.3rem;
+}
+.scene_5--keyword__red, .scene_5--keyword__darkred, .scene_5--keyword__yellow, .scene_5--keyword__pink{
+  font-size: 3rem;
+}
 }
 @media only screen and (min-width: 1440px){
   .header__home{
@@ -2151,6 +2611,26 @@ input:checked{
     width: 21rem;
     height:32rem;
   }
+  .oswald__font{
+    font-size: 2rem;
+    line-height: 4rem;
+  }
+  .lr--intro__video{
+    width: 70%;
+
+  }
+  .lr--intro__linkbg{
+    width: 35.9rem;
+    height: 6.9rem;
+  }
+  .lr--itro__link{
+    font-size: 4.8rem;
+  }
+
+  .scene-1__katy{
+    font-size: 4.8rem;
+  }
+
 
 }
 
