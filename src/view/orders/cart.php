@@ -89,7 +89,7 @@
         <p class="related__product--title">The Road</p>
         </a>
     <a class="related__product" href="index.php?page=detail&id=14">
-        <img src="../assets/products/boekensteun/boekensteun_Cover.jpg" alt="Humo Boekensteun" class="related__product--image">
+        <img src="../assets/products/boekensteun/boekensteun_cover.jpg" alt="Humo Boekensteun" class="related__product--image">
         <p class="related__product--title">Humo boekensteun</p>
     </a>
 </div>
