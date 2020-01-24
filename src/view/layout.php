@@ -8,7 +8,7 @@
     <title>Humo - webshop</title>
      <?php echo $css;?>
   </head>
-  <body>
+  <body onkeydown='getKeyAndMove(event)'>
       <nav class="navigation">
       <div class="navigation__mobile">
 

@@ -1,11 +1,11 @@
 <header class="lr--intro">
   <h1 class="hidden">The handmaid's Tale</h2>
   <video src="./assets/longread/intro/intro.mp4" class="lr--intro__video" width="100%" autoplay loop></video>
-  <a href="" class="lr--intro__linkbg">
+  <a href="#scene1" class="lr--intro__linkbg">
   <p  class="lr--itro__link oswald__font">Ontmoet Katy</p>
 </a>
 </header>
-<section class="lr--scene_1">
+<section id="scene1" class="lr--scene_1">
   <div class="scene_1--wrapper">
   <div class="scene_1--texts__wrapper">
   <h2 class="hidden">Mijn naam is Katy</h2>
@@ -34,7 +34,7 @@
       </p>
   </div>
     <img src="./assets/longread/scene_2/june.png" alt="June" class="scene_2--june" width="75.5" height="133">
-    <img src="./assets/longread/scene_2/katy-bike.png" alt="Katy" class="scene_2--katy__bike" width="64" height="95">
+    <img src="./assets/longread/scene_2/katy-bike.png" alt="Katy" class="scene_2--katy__bike" id="katyfiets" width="64" height="95">
     <div class="swipe--flex">
     <picture>
             <source media="(max-width: 1339px)" srcset="./assets/longread/scene_2/swipe.png">
@@ -164,6 +164,39 @@ Ik ben boos en verdrietig. Christelijke mensen willen ons land redden en gaan nu
   <h2 class="hidden">Boek bestellen</h2>
   <img src="./assets/longread/author/cover-boek.png" alt="Margaret Atwood" class="bestellen__boek--img">
   <div class="lr--bestellen__link--bg">
-    <a href="" class="lr--bestellen__link oswald__font">bestellen</a>
+    <a href="index.php?page=detail&id=9" class="lr--bestellen__link oswald__font">bestellen</a>
   </div>
 </section>
+
+<!--- ik schrijf de js code voor de fiets hier want voor een of andere reden wilt de code niet werken in m'n index.js --->
+
+<script type="text/javascript">
+
+	var kleinekaty= null;
+	function init(){
+    kleinekaty=document.getElementById("katyfiets");
+    kleinekaty.style.position='relative';
+		kleinekaty.style.left='100px';
+		kleinekaty.style.top='250px';
+
+	}
+	function getKeyAndMove(e){
+		var key_code=e.which||e.keyCode;
+		switch(key_code){
+      case 37: //left arrow key
+				moveLeft();
+        break;
+      case 39: //right arrow key
+				moveRight();
+				break;
+
+		}
+	}
+	function moveLeft(){
+		kleinekaty.style.left=parseInt(kleinekaty.style.left)-10 +'px';
+	}
+	function moveRight(){
+		kleinekaty.style.left=parseInt(kleinekaty.style.left)+10 +'px';
+}
+	window.onload=init;
+</script>

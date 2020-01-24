@@ -17,6 +17,7 @@ import './style.css';
     });
 
   });
+
   const init = () => {
     const whoamis = document.querySelectorAll(`.lr--scene_5__charachter`);
     for (const whoami of whoamis) {
@@ -35,6 +36,40 @@ import './style.css';
         thisismebutton.style.display = `none`;
       });
     };
+
+
+
+
+    //  const katyScene2 = document.querySelector(`.scene_2--katy__bike`);
+
+    //  window.addEventListener(`keypress`, () => {
+    //    moveMeisje();
+    //  });
+
+    // const moveMeisje = () => {
+    //   const keyCode = e.keyCode;
+    //   if (keyCode === 39) {
+    //    console.log('je gaat naar rechts');
+    //  }
+    // };
+
+    //  document.onkeydown = function(e) {
+    //    const moveL = `-2rem`;
+    //    const katyScene2 = document.querySelector(`.scene_2--katy__bike`);
+    //    const katyfiets = document.getElementById('katyfiets');
+    //    switch (e.keyCode) {
+
+    //    case 37:
+    //      console.log('links');
+    //      katyfiets.css(`${katyfiets.position.left + 1 }rem`);
+    //      break;
+    //    case 39:
+    //      console.log('rechts');
+    //      break;
+    //    }
+    // };
+
+    
 
   };
 

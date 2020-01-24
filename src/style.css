@@ -14,6 +14,7 @@ html {
   box-sizing: border-box;
   font-family: 'roboto';
   font-weight: normal;
+  scroll-behavior: smooth;
 }
 
 h1,h2,h3{
@@ -1587,6 +1588,14 @@ input:checked{
 .lr--bestellen__link:hover{
   color: #e2001a;
 }
+
+
+.zwanger--centrum, .baby--left{
+  transition: 0.3s ease;
+}
+.zwanger--centrum:hover, .baby--left:hover{
+  opacity: 0;
+}
 @media only screen and (min-width: 835px){
 .header__home{
     height: 33.23rem;
@@ -2252,8 +2261,9 @@ transform: translateY(-35rem);
   transform: translateY(6rem);
 }
 .lr--scene2__gras{
-  transform: translateY(-12rem);
+  transform: translateY(-30rem);
   z-index: 3;
+  width: 100%;
 }
 .lr--scene_3--texts{
   display: flex;
@@ -2718,6 +2728,7 @@ width: 37.5rem;
     font-size: 2rem;
     line-height: 4rem;
   }
+
   .lr--intro__video{
     width: 70%;
 
@@ -2810,6 +2821,9 @@ width: 37.5rem;
     height: 95rem;
 
 
+  }
+  .zwanger--centrum{
+    margin-left: .5rem;
   }
   .scene_3__part--centrum{
     margin-top: -32rem;
