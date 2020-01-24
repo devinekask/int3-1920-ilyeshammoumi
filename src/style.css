@@ -1266,6 +1266,8 @@ input:checked{
 }
 .scene_2--swipe{
   bottom: 1rem;
+  width:7.1rem;
+  height:8.4rem;
 }
 .scene_2--luke{
   bottom: 1rem;
@@ -1289,6 +1291,7 @@ input:checked{
 .scene_2--alinea1__keyword{
   text-transform: uppercase;
   font-size: 1.8rem;
+  font-weight: bold;
   color: #AF2528;
   margin: 0 .5rem;
 }
@@ -1522,6 +1525,67 @@ input:checked{
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.lr--author{
+  background-color: black;
+  margin-top: -12rem;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+.author--image{
+  width: 25.4rem;
+}
+.author--name__bg{
+  height: 9.16rem ;
+  width: 100%;
+  background-color: #BF1515;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.author--name{
+  font-size: 4.8rem;
+  font-family: 'Cormorant Infant', serif;
+  font-weight: bold;
+}
+.author--description{
+  color: white;
+  width: 32.65rem;
+  font-size: 1.8rem;
+  margin: 1.5rem 0;
+}
+.lr--bestellen{
+  background-color: #800E0E;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+.bestellen__boek--img{
+  width: 21.8rem;
+}
+.lr--bestellen__link--bg{
+  width: 18.3rem;
+  height: 4.5rem;
+  border: black solid .4rem;
+  border-radius: 12rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+.lr--bestellen__link{
+  font-size: 2.4rem;
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.lr--bestellen__link--bg:hover{
+  background-color: #fff;
+  border: none;
+}
+.lr--bestellen__link:hover{
+  color: #e2001a;
 }
 @media only screen and (min-width: 835px){
 .header__home{
@@ -2282,6 +2346,41 @@ width: 37.5rem;
 .scene_5--keyword__red, .scene_5--keyword__darkred, .scene_5--keyword__yellow, .scene_5--keyword__pink{
   font-size: 3rem;
 }
+.lr--author{
+  display: grid;
+  grid-template-areas: 'foto naam'
+                       'foto tekst';
+                       grid-gap: 0;
+}
+.author--image{
+  grid-area: foto;
+  width: 100%;
+
+}
+.author--name{
+  grid-area: naam;
+  padding-top: -1rem;
+}
+.author--description{
+  grid-area: tekst;
+  width: 37.8rem;
+  margin: 5rem 0 0 1.8rem;
+}
+.bestellen__boek--img{
+  width: 38.1rem;
+}
+.lr--bestellen__link--bg{
+  width: 32rem;
+  height: 8rem;
+}
+.lr--bestellen__link{
+  font-size: 4.8rem;
+}
+.author--info{
+  display: flex;
+  flex-flow: column;
+
+}
 }
 @media only screen and (min-width: 1440px){
   .header__home{
@@ -2630,8 +2729,201 @@ width: 37.5rem;
   .lr--itro__link{
     font-size: 4.8rem;
   }
-
+  .lr--scene_1{
+    margin-top: 25rem;
+  }
+  .scene_1-ouders{
+    height: 99.7rem;
+    margin-top: unset;
+  }
+  .scene_1-pijlen{
+    height: 90rem;
+  }
   .scene-1__katy{
+    font-size: 4.8rem;
+  }
+  .scene1-alinea1{
+    width: 40rem;
+    transform: translateX(-16rem);
+    margin-top: 5rem;
+  }
+  .scene1-alinea2--text{
+    width: 40.9rem;
+    transform: translateX(10rem);
+    margin-top: 15rem;
+  }
+  .scene1-alinea2{
+    font-size: 3.6rem;
+  }
+  .lr--scene_2{
+    overflow: hidden;
+  }
+  .lr--scene2__clouts{
+    height: 84.4rem;
+    transform: translateY(-45rem);
+  }
+  .lr--scene_2--images{
+    height: 108rem;
+  }
+  .scene_2--mobile__alinea1{
+    margin-top: 8rem;
+  }
+  .scene_2--mobile__alinea1{
+    width: 46.5rem;
+  }
+  .scene_2__alinea--rechts{
+    width: 60rem;
+    transform: translateY(20rem);
+  }
+
+  .scene_2--alinea1__keyword{
+    font-size: 3.6rem;
+  }
+  .scene_2--luke{
+    width: 31rem;
+    height: 53.4rem;
+   transform: translateX(4rem);
+  }
+  .scene_2--june{
+    width: 27.8rem;
+    height: 42rem;
+  }
+  .scene_2--katy__bike{
+    width: 27.8rem;
+    height: 41.9rem;
+    left: 30rem;
+  }
+  .scene_2--swipe{
+    bottom: 16rem;
+    width: 26.4rem;
+    height: 9.6rem;
+  }
+  .lr--scene2__gras{
+    transform: translateY(-20rem);
+  }
+  .lr--scene_3{
+    height: 107.3rem;
+    padding: 3rem;
+  }
+  .zwanger--centrum, .scene_3__part--centrum{
+    width: 44.5rem;
+    height: 95rem;
+
+
+  }
+  .scene_3__part--centrum{
+    margin-top: -32rem;
+    transform: translatex(-20rem);
+  }
+  .man--left{
+    width: 30rem;
+    transform: translateX(-10rem);
+    height: 51.8rem;
+  }
+  .baby--left{
+    width: 15.4rem;
+    height: 39.2rem;
+    transform: translateX(-3rem);
+    margin-top: 5rem;
+    z-index: 1;
+
+  }
+  .scene_3__part--left{
+    transform: translateY(-25rem);
+
+  }
+  .scene_3--text__left{
+    transform: translateY(65rem);
+    margin-right: 40rem;
+    width: 45rem;
+  }
+  .scene_3--alinea1__keyword, .scene_3--alinea2__keyword{
+    font-size: 3.6rem;
+  }
+  .scene_3--right{
+    width: 47.8rem;
+   transform: translateY(5rem);
+
+  }
+  .dokter--right{
+    width: 19.4rem;
+    height: 54.1rem;
+  }
+  .women--right{
+    width: 19.4rem;
+    height: 49.1rem;
+    transform: translateX(5rem);
+    margin-top: 7rem;
+  }
+  .lr--scene_4{
+    position: relative;
+  }
+  .lr--scene_4--texts{
+    width: 68rem;
+    height: 54.3rem;
+    position: absolute;
+    top: 8rem;
+  }
+  .lr--scene_4--images{
+    height: 136.6rem;
+  }
+  .scene_4--text{
+    width: 61rem;
+  }
+  .scene_4--keyword1 {
+    font-size: 2.4rem;
+  }
+  .scene_4--keyword2{
+    font-size: 3.6rem;
+  }
+  .scene_4--priester{
+    width: 14rem;
+    height: 42rem;
+    transform: translateX(-20rem);
+    margin-top: 15rem;
+  }
+  .scene_5__charachter--top, .scene_5__charachter--bottom{
+    max-width: unset;
+  }
+
+  .scene_5--text__left, .scene_5--text__center{
+
+    margin: auto;
+
+  }
+
+  .scene_5--keyword__red, .scene_5--keyword__darkred, .scene_5--keyword__yellow, .scene_5--keyword__pink{
+    font-size: 3.6rem;
+  }
+  .lr--scene_6{
+    height: 100rem;
+    background-position: center top;
+  }
+  .scene_6--june{
+    width: 34.7rem;
+    height: 66.2rem;
+    transform: translateY(15rem);
+  }
+  .scene_6--front{
+    width: 114.5rem;
+    height: 83.6rem;
+  }
+  .author--image{
+
+  }
+  .author--name__bg{
+    height: 17.6rem;
+  }
+  .author--name{
+    font-size: 13rem;
+
+
+  }
+  .author--description{
+    width: 64.7rem;
+    margin: 3rem 0 0 15rem;
+  }
+  .lr--bestellen__link{
     font-size: 4.8rem;
   }
 

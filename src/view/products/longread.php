@@ -11,7 +11,7 @@
   <h2 class="hidden">Mijn naam is Katy</h2>
   <p class="oswald__font scene_1--text scene1-alinea1">Ik ben <span class="pacifico__font scene-1__katy">Katy</span> de schattige, blauwharige baby in de armen van mama en papa.  Mijn <span class="scene-luke"> STOERE PAPA LUKE</span>, mijn <span class="delius__font scene-june"> Lieve Mama June </span>, eenvoudige maar trotse ouders van hun eerstgeborene. Zoals vele jongen mensen zijn zij heel moedig hun leven aan het opbouwen en lopen zij over van liefde en vreugde voor elkaar. </p>
 
-  <p class="oswald__font scene_1--text"><span class="pacifico__font scene1-alinea2">Broertjes en Zusjes ?</span> <br> Ik ben er van overtuigd, er zullen er nog heel wat volgen want een groot gezin is hun grootste ambitie. Wij wonen in een mooi, proper huisje. Als mama en papa naar hun werk gaan zorgt mijn oma’tje voor mij. Ik amuseer me rot maar ben o zo blij ben als ik ’s avonds terug naar huis mag. </p>
+  <p class="oswald__font scene_1--text scene1-alinea2--text"><span class="pacifico__font scene1-alinea2">Broertjes en Zusjes ?</span> <br> Ik ben er van overtuigd, er zullen er nog heel wat volgen want een groot gezin is hun grootste ambitie. Wij wonen in een mooi, proper huisje. Als mama en papa naar hun werk gaan zorgt mijn oma’tje voor mij. Ik amuseer me rot maar ben o zo blij ben als ik ’s avonds terug naar huis mag. </p>
   </div>
   <div class="scene_1-ouders">
     <img src="./assets/longread/scene_1/pijlen.png" alt="pijlen" height="260" class="scene_1-pijlen">
@@ -36,7 +36,11 @@
     <img src="./assets/longread/scene_2/june.png" alt="June" class="scene_2--june" width="75.5" height="133">
     <img src="./assets/longread/scene_2/katy-bike.png" alt="Katy" class="scene_2--katy__bike" width="64" height="95">
     <div class="swipe--flex">
-    <img src="./assets/longread/scene_2/swipe.png" alt="Swipe finger" class="scene_2--swipe" width="71" height="84">
+    <picture>
+            <source media="(max-width: 1339px)" srcset="./assets/longread/scene_2/swipe.png">
+            <source media="(min-width: 1440px)" srcset="./assets/longread/scene_1/toetsenbord.png">
+            <img src="./assets/longread/scene_1/toetsenbord.png" alt="pijlen" class="scene_2--swipe">
+    </picture>
     </div>
     <img src="./assets/longread/scene_2/luke.png" alt="Luke" class="scene_2--luke" width="79" height="133">
   </div>
@@ -53,10 +57,10 @@
 <img src="./assets/longread/scene_2/gras.png" alt="gras" class="lr--scene2__gras">
 <section class="lr--scene_3">
   <div class="lr--scene_3--texts">
-  <p class="scene_3--text oswald__font">
+  <p class="scene_3--text oswald__font scene_3--text__left">
       Mama wordt als maar verdrietiger en zieker, papa als maar radelozer. En zij niet alleen want ook mijn vriendjes en vriendinnetjes horen hun mama en papa <span class="rosarivo__font scene_3--alinea1__keyword">RUZIE MAKEN EN SAMEN HUILEN</span> . Ik begrijp het allemaal niet zo goed. Papa leest mij een briefje voor dat ze die dag in de brievenbus hebben gekregen.
       </p>
-      <p class="scene_3--text oswald__font">
+      <p class="scene_3--text oswald__font scene_3--right">
       Wetenschappers hebben ontdekt dat al de mensen op aarde onze planeet heel erg <span class="rosarivo__font scene_3--alinea2__keyword">VERVUILEN</span> en dat we daardoor veel vlugger ziek worden en vooral veel minder sterk zijn. Mama’s hebben <span class="rosarivo__font scene_3--alinea2__keyword"> DODE KINDJES </span>in hun buik of kunnen er gewoon geen meer hebben en zo begrijp ik ook waarom ik geen broertjes of zusjes heb gekregen.
       </p>
       </div>
@@ -111,12 +115,15 @@ Ik ben boos en verdrietig. Christelijke mensen willen ons land redden en gaan nu
     </div>
     </div>
     <div class="lr--scene_5--texts">
-    <p class="scene_4--text scene_5--text oswald__font">
-    Ons gezinnetje bestaat niet meer. Papa werkt en woont nu in en nabij de <span class="scene_5--keyword__red"> KERNCENTRALE </span>. Wanneer hij toch eens <span class="scene_5--keyword__darkred"> KWAAD</span> en <span class="scene_5--keyword__yellow"> OPSTANDIG</span> wordt dan wordt hij in een werkkamp geplaatst. Het leven is er nog ongezonder dan in ons knusse huisje van vroeger.
+    <div class="scene_5--text__left">
+    <p class="scene_4--text scene_5--text  oswald__font">
+    Ons gezinnetje bestaat niet meer. Papa werkt en woont nu in en nabij de <span class="scene_5--keyword__red scene_5--desktop"> KERNCENTRALE </span>. Wanneer hij toch eens <span class="scene_5--keyword__darkred"> KWAAD</span> en <span class="scene_5--keyword__yellow"> OPSTANDIG</span> wordt dan wordt hij in een werkkamp geplaatst. Het leven is er nog ongezonder dan in ons knusse huisje van vroeger.
     </p>
-    <p class="scene_4--text scene_5--text oswald__font">
+    </div>
+    <p class="scene_4--text scene_5--text scene_5--text__center oswald__font">
     Mama krijgt inderdaad nog andere baby’tjes maar het zijn nooit mijn broer of zusjes. Mijn mama wordt een “<span class="scene_5--keyword__red">HANDMAIDS TALE</span>”, een dienstmeid. Het wordt haar taak om gezonde <span class="scene_5--keyword__yellow"> KINDJES OP DE WERELD ZETTEN</span>. Zij ziet ze helaas nooit want van zodra de kindjes geboren worden, verdwijnen ze weer en worden ze naar andere gezinnen gebracht.
     </p>
+
     </div>
 </section>
 <section class="lr--scene_6">
@@ -132,4 +139,27 @@ Ik ben boos en verdrietig. Christelijke mensen willen ons land redden en gaan nu
     <p class="scene_4--text scene_6--text oswald__font">
     Ze sluit zich aan bij de groep en neemt actief deel aan zoveel mogelijk activiteiten . Alleen zo kan zij misschien aan haar lot ontsnappen en <span class="scene_5--keyword__red"> OP ZOEK </span> gaan naar haar <span class="scene_5--keyword__pink rosarivo__font">DOCHTER EN ECHTGENOOT</span>. Haar allergrootste probleem is dat de wereld groot is en zij absoluut niet weet waar ze haar zoektocht moet starten.
     </p>
+</section>
+<section class="lr--author">
+    <img src="./assets/longread/author/margaret_atwood.jpg" alt="Margaret Atwood" class="author--image">
+    <div class="author--info">
+    <div class="author--name__bg">
+      <h2 class="author--name">Margaret Atwood</h2>
+    </div>
+    <div class="author--description__wrapper">
+    <p class="author--description oswald__font">
+    Margaret Eleanor Atwood OC is een van Canada's belangrijkste hedendaagse schrijvers. Ze is dichteres, romanschrijfster, literair criticus, feministe en politiek activiste. Ze krijgt zowel nationale als internationale erkenning
+    </p>
+    <p class="author--description oswald__font">
+    Ze wordt vaak beschreven als een feministisch schrijver, en seksevraagstukken komen prominent voor in haar werk. Haar werk concentreert zich onder andere ook op de identiteit van Canada, de relaties tussen Canada en de Verenigde Staten en Europa, mensenrechten, milieuvraagstukken, de voorstelling van het vrouwelijk lichaam in kunst en de relatie van vrouwen met elkaar en tegenover mannen.
+    </p>
+    </div>
+    </div>
+</section>
+<section class="lr--bestellen">
+  <h2 class="hidden">Boek bestellen</h2>
+  <img src="./assets/longread/author/cover-boek.png" alt="Margaret Atwood" class="bestellen__boek--img">
+  <div class="lr--bestellen__link--bg">
+    <a href="" class="lr--bestellen__link oswald__font">bestellen</a>
+  </div>
 </section>
