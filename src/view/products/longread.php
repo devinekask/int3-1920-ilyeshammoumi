@@ -71,7 +71,7 @@
       <img src="./assets/longread/scene_3/man--left.png" alt="man" class="man--left" width="143" height="207">
   </div>
   <div class="scene_3__part--centrum">
-    <img src="./assets/longread/scene_3/women--after.png" alt="zwangere vrouw" class="zwanger--centrum" height="348.5" width="166.6rem" >
+    <img src="./assets/longread/scene_3/women--before.png" alt="zwangere vrouw" class="zwanger--centrum" height="348.5" width="166.6rem" >
   </div>
   <div class="scene3_3__part--right">
     <img src="./assets/longread/scene_3/women--right.png" alt="wenende vrouw" class="women--right" width="74.6" height="171">
