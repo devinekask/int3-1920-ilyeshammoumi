@@ -60,25 +60,25 @@
             </label>
             <label for="straatnaam" class="gegevens__form--inputfield gegevens__form--straat">
                 <span>Straatnaam :</span>
-                <input type="text" name="straatnaam" value="<?php if (!empty($_POST['straatnaam'])){echo $_POST['straatnaam'];}  ?>" class="gegevens__form--input" >
+                <input type="text" name="straatnaam" value="<?php if (!empty($_POST['straatnaam'])){echo $_POST['straatnaam'];}  ?>" class="gegevens__form--input" required>
                 <span class="error"><?php if(!empty($errors['straatnaam'])){ echo $errors['straatnaam'];} ?></span>
 
             </label>
             <label for="huisnummer" class="gegevens__form--inputfield gegevens__form--huis">
                 <span>Huisnummer en bus :</span>
-                <input type="text" name="huisnummer"  value="<?php if (!empty($_POST['huisnummer'])){echo $_POST['huisnummer'];}  ?>" class="gegevens__form--input gegevens__form--huis" placeholder="Bv. 81-C">
+                <input type="text" name="huisnummer"  value="<?php if (!empty($_POST['huisnummer'])){echo $_POST['huisnummer'];}  ?>" class="gegevens__form--input gegevens__form--huis" placeholder="Bv. 81-C" required>
                 <span class="error"><?php if(!empty($errors['huisnummer'])){ echo $errors['huisnummer'];} ?></span>
 
             </label>
             <label for="email" class="gegevens__form--inputfield gegevens__form--email">
                 <span>E-mail :</span>
-                <input type="email" name="email" value="<?php if (!empty($_POST['email'])){echo $_POST['email'];}  ?>" class="gegevens__form--input" >
+                <input type="email" name="email" value="<?php if (!empty($_POST['email'])){echo $_POST['email'];}  ?>" class="gegevens__form--input" required>
                 <span class="error"><?php if(!empty($errors['email'])){ echo $errors['email'];} ?></span>
             </label>
             <label for="telefoonnummer" class="gegevens__form--inputfield gegevens__form--telefoon">
                 <span>Telefoonnummer :</span>
                 <span class="telefoon__updates">(Voor levering updates)</span>
-                <input type="telefoonnummer" name="telefoonnummer" value="<?php if (!empty($_POST['telefoonnummer'])){echo $_POST['telefoonnummer'];}  ?>" class="gegevens__form--input" >
+                <input type="telefoonnummer" name="telefoonnummer" value="<?php if (!empty($_POST['telefoonnummer'])){echo $_POST['telefoonnummer'];}  ?>" class="gegevens__form--input" required>
                 <span class="error"><?php if(!empty($errors['telefoonnummer'])){ echo $errors['telefoonnummer'];} ?></span>
 
 
@@ -88,20 +88,20 @@
                 <div class="betaling__flex">
                 <div class="gegevens__form--betaling">
                     <img src="../assets/fotos/Bancontact_logo.png" class="betaling__logo" alt="Bancontact">
-                    <input type="radio" value="1" name="betaalwijze">
+                    <input type="radio" value="Bancontact" name="betaalwijze">
                 </div>
                 <div class="gegevens__form--betaling">
-                    <img src="../assets/fotos/mastercard.png" class="betaling__logo" alt="Bancontact">
-                    <input type="radio" value="1" name="betaalwijze">
+                    <img src="../assets/fotos/mastercard.png" class="betaling__logo" alt="Mastercard">
+                    <input type="radio" value="Mastercard" name="betaalwijze">
                 </div>
                 <div class="gegevens__form--betaling">
-                    <img src="../assets/fotos/visa_logo.png" class="betaling__logo" alt="Bancontact">
-                    <input type="radio" value="1" name="betaalwijze">
+                    <img src="../assets/fotos/visa_logo.png" class="betaling__logo" alt="Visa">
+                    <input type="radio" value="Visa" name="betaalwijze">
                 </div>
                 <div class="gegevens__form--betaling">
                     <img src="../assets/fotos/paypal.jpg
-                    " class="betaling__logo betaling__logo--paypal" alt="Bancontact">
-                    <input type="radio" value="1" name="betaalwijze">
+                    " class="betaling__logo betaling__logo--paypal" alt="Paypal">
+                    <input type="radio" value="Paypal" name="betaalwijze">
                 </div>
             </div>
             </label>

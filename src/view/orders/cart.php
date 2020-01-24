@@ -80,18 +80,18 @@
         <image class="pijl white--fill" src="../assets/fotos/pijl.svg" width="24.86" height="19.89"/>
     </div>
     <div class="related--flex">
-    <div class="related__product">
-        <img src="../assets/books/wool/Wool_Cover.jpg" alt="Wool" class="related__product--image winkelmand__related--image">
-        <p class="related__product--title">Wool</p>
-    </div>
-    <div class="related__product">
-        <img src="../assets/books/wool/Wool_Cover.jpg" alt="Wool" class="related__product--image">
-        <p class="related__product--title">Wool</p>
-    </div>
-    <div class="related__product">
-        <img src="../assets/books/wool/Wool_Cover.jpg" alt="Wool" class="related__product--image">
-        <p class="related__product--title">Wool</p>
-    </div>
+    <a class="related__product"  href="index.php?page=detail&id=16">
+        <img src="../assets/products/vergrootglass/vergrootglas_cover.jpg" alt="vergrootglas" class="related__product--image winkelmand__related--image">
+        <p class="related__product--title">Groot vergrootglas</p>
+        </a>
+    <a class="related__product" href="index.php?page=detail&id=10">
+        <img src="../assets/books/the_road/The_Road_Cover.jpg" alt="The Road" class="related__product--image">
+        <p class="related__product--title">The Road</p>
+        </a>
+    <a class="related__product" href="index.php?page=detail&id=14">
+        <img src="../assets/products/boekensteun/boekensteun_Cover.jpg" alt="Humo Boekensteun" class="related__product--image">
+        <p class="related__product--title">Humo boekensteun</p>
+    </a>
 </div>
 </section>
 </form>
